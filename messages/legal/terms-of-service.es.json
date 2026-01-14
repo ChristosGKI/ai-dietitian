@@ -1,0 +1,57 @@
+{
+  "termsOfService": {
+    "title": "Términos de Servicio",
+    "lastUpdated": "Última actualización: Enero 2025",
+    "introduction": {
+      "title": "Introducción",
+      "content": "Bienvenido a AI Dietitian. Estos Términos de Servicio ('Términos') rigen tu acceso y uso del sitio web de AI Dietitian, la aplicación móvil y los servicios relacionados (colectivamente, el 'Servicio'). Al acceder o utilizar el Servicio, aceptas quedar vinculado por estos Términos. Si no estás de acuerdo, no debes usar el Servicio."
+    },
+    "acceptance": {
+      "title": "Aceptación de los Términos",
+      "content": "Al crear una cuenta, acceder al Servicio o continuar usándolo, confirmas que aceptas estos Términos y te comprometes a cumplirlos. Debes tener al menos 18 años o haber alcanzado la mayoría de edad en tu jurisdicción para usar el Servicio."
+    },
+    "medicalDisclaimer": {
+      "title": "Descargo de Responsabilidad Médica",
+      "content": "El Servicio proporciona información nutricional general y sugerencias dietéticas personalizadas basadas en inteligencia artificial. No sustituye el consejo, diagnóstico o tratamiento médico profesional. Siempre consulta a un profesional de la salud calificado antes de realizar cambios en tu dieta, especialmente si tienes condiciones médicas, alergias o estás embarazada. La confianza en cualquier información proporcionada por el Servicio es exclusivamente bajo tu propio riesgo."
+    },
+    "userAccounts": {
+      "title": "Cuentas de Usuario",
+      "content": "Puedes necesitar crear una cuenta para acceder a ciertas funciones. Eres responsable de mantener la confidencialidad de tus credenciales de cuenta y de todas las actividades que ocurran bajo tu cuenta. Notifícanos inmediatamente cualquier uso no autorizado."
+    },
+    "prohibited": {
+      "title": "Actividades Prohibidas",
+      "item1": "Usar el Servicio para cualquier propósito ilegal o en violación de las leyes aplicables",
+      "item2": "Hacerse pasar por cualquier persona o entidad o declarar falsamente tu afiliación",
+      "item3": "Interferir o interrumpir el Servicio o los servidores",
+      "item4": "Intentar obtener acceso no autorizado a cualquier parte del Servicio",
+      "item5": "Cargar o transmitir virus, malware o contenido dañino"
+    },
+    "intellectualProperty": {
+      "title": "Propiedad Intelectual",
+      "content": "El Servicio y su contenido, incluyendo texto, gráficos, logotipos y software, son propiedad de AI Dietitian o sus licenciantes y están protegidos por leyes de derechos de autor, marcas registradas y otras leyes de propiedad intelectual. Se te otorga una licencia limitada y no transferible para usar el Servicio con fines personales y no comerciales."
+    },
+    "termination": {
+      "title": "Terminación",
+      "content": "Podemos suspender o terminar tu acceso al Servicio en cualquier momento, sin previo aviso, por conducta que viole estos Términos o sea perjudicial para el Servicio u otros usuarios."
+    },
+    "limitationOfLiability": {
+      "title": "Limitación de Responsabilidad",
+      "content": "En la máxima medida permitida por la ley, AI Dietitian no será responsable de daños indirectos, incidentales, especiales, consecuentes o punitivos, ni de ninguna pérdida de beneficios o ingresos, ya sea incurrida directa o indirectamente. Nuestra responsabilidad total no excederá la cantidad que nos hayas pagado en los 12 meses anteriores a la reclamación."
+    },
+    "governingLaw": {
+      "title": "Ley Aplicable",
+      "content": "Estos Términos se rigen e interpretan de acuerdo con las leyes de Grecia, sin considerar los principios de conflicto de leyes. Cualquier disputa se resolverá exclusivamente en los tribunales de Atenas, Grecia."
+    },
+    "changes": {
+      "title": "Cambios a Estos Términos",
+      "content": "Podemos revisar estos Términos de vez en cuando. La versión actualizada se publicará en esta página con una nueva fecha de 'Última actualización'. El uso continuado del Servicio después de los cambios constituye la aceptación de los Términos revisados."
+    },
+    "contact": {
+      "title": "Contáctenos",
+      "content": "Si tienes preguntas sobre estos Términos, por favor contáctanos en:",
+      "companyName": "AI Dietitian",
+      "email": "Correo electrónico: support@aidietitian.com",
+      "address": "Dirección: [Dirección de la Empresa]"
+    }
+  }
+}

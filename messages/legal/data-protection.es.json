@@ -1,0 +1,111 @@
+{
+  "dataProtection": {
+    "title": "Protección de Datos",
+    "lastUpdated": "Última actualización: Enero 2025",
+    "overview": {
+      "title": "Descripción General",
+      "content": "AI Dietitian se compromete a proteger sus datos personales y garantizar el cumplimiento de las leyes de protección de datos aplicables, incluido el Reglamento General de Protección de Datos (GDPR) para los usuarios del Área Económica Europea (AEE). Esta página describe nuestras prácticas de protección de datos, sus derechos y cómo manejamos su información."
+    },
+    "processingActivities": {
+      "title": "Actividades de Procesamiento de Datos"
+    },
+    "categories": {
+      "title": "Categorías de Datos que Procesamos",
+      "identityTitle": "Datos de Identidad:",
+      "identityContent": "Nombre, nombre de usuario o identificador similar",
+      "contactTitle": "Datos de Contacto:",
+      "contactContent": "Dirección de correo electrónico, número de teléfono o dirección postal",
+      "healthTitle": "Datos de Salud:",
+      "healthContent": "Preferencias dietéticas, alergias, objetivos de salud y requisitos nutricionales",
+      "technicalTitle": "Datos Técnicos:",
+      "technicalContent": "Dirección IP, tipo de navegador, sistema operativo e información del dispositivo",
+      "usageTitle": "Datos de Uso:",
+      "usageContent": "Información sobre cómo utiliza nuestros servicios",
+      "preferenceTitle": "Datos de Preferencias:",
+      "preferenceContent": "Preferencia de idioma y preferencias de comunicación"
+    },
+    "purposes": {
+      "title": "Fines del Procesamiento",
+      "content": "Procesamos sus datos para los siguientes fines:",
+      "purpose1": "Proporcionar recomendaciones nutricionales personalizadas",
+      "purpose2": "Mejorar y optimizar nuestros servicios de IA",
+      "purpose3": "Gestionar su cuenta y proporcionar atención al cliente",
+      "purpose4": "Enviar mensajes administrativos y actualizaciones",
+      "purpose5": "Cumplir con obligaciones legales",
+      "purpose6": "Analizar patrones de uso para mejorar la experiencia del usuario"
+    },
+    "securityMeasures": {
+      "title": "Medidas de Seguridad",
+      "intro": "Implementamos medidas técnicas y organizativas apropiadas para proteger sus datos personales:",
+      "encryptionTitle": "Cifrado:",
+      "encryptionContent": "Los datos se cifran en tránsito mediante protocolos TLS/SSL y en reposo mediante cifrado estándar de la industria",
+      "accessTitle": "Controles de Acceso:",
+      "accessContent": "Los controles de acceso basados en roles limitan el acceso a los datos solo al personal autorizado",
+      "infrastructureTitle": "Infraestructura Segura:",
+      "infrastructureContent": "Nuestros sistemas están alojados en centros de datos seguros con controles de acceso físico",
+      "auditsTitle": "Auditorías Regulares:",
+      "auditsContent": "Se realizan evaluaciones de seguridad y escaneos de vulnerabilidades regularmente",
+      "minimizationTitle": "Minimización de Datos:",
+      "minimizationContent": "Solo recopilamos los datos necesarios para los fines declarados",
+      "trainingTitle": "Capacitación de Empleados:",
+      "trainingContent": "El personal recibe capacitación regular en protección de datos y seguridad"
+    },
+    "dataRetention": {
+      "title": "Períodos de Retención de Datos",
+      "intro": "Conservamos sus datos personales solo durante el tiempo necesario para cumplir con los fines para los que fueron recopilados. Los períodos de retención específicos se basan en:",
+      "factor1": "El fin para el cual se recopilaron los datos",
+      "factor2": "Requisitos legales y regulatorios",
+      "factor3": "La naturaleza de los datos (especialmente datos de salud sensibles)",
+      "factor4": "Nuestros intereses comerciales legítimos",
+      "healthNote": "Los datos de salud y nutricionales generalmente se conservan durante la duración de su cuenta más un período razonable después para permitir la reactivación de la cuenta. Los datos de la cuenta se eliminan dentro de los 30 días posteriores a la solicitud de cierre de la cuenta, excepto cuando la retención sea requerida por ley."
+    },
+    "userRights": {
+      "title": "Sus Derechos",
+      "intro": "Bajo las leyes de protección de datos aplicables, tiene los siguientes derechos con respecto a sus datos personales:",
+      "accessTitle": "Derecho de Acceso",
+      "accessContent": "Puede solicitar una copia de los datos personales que tenemos sobre usted.",
+      "rectificationTitle": "Derecho de Rectificación",
+      "rectificationContent": "Puede solicitar la corrección de datos inexactos o incompletos.",
+      "erasureTitle": "Derecho de Supresión",
+      "erasureContent": "Puede solicitar la eliminación de sus datos personales (\"derecho al olvido\").",
+      "restrictionTitle": "Derecho a la Limitación",
+      "restrictionContent": "Puede solicitar que limitemos cómo usamos sus datos.",
+      "portabilityTitle": "Derecho a la Portabilidad",
+      "portabilityContent": "Puede solicitar la transferencia de sus datos a otro proveedor de servicios.",
+      "objectionTitle": "Derecho de Oposición",
+      "objectionContent": "Puede oponerse al procesamiento basado en intereses legítimos.",
+      "exerciseTitle": "Cómo Ejercer Sus Derechos",
+      "exerciseContent": "Para ejercer cualquiera de estos derechos, contáctenos utilizando la información proporcionada al final de esta página. Responderemos a su solicitud dentro de los 30 días. Es posible que necesitemos verificar su identidad antes de procesar ciertas solicitudes."
+    },
+    "internationalTransfers": {
+      "title": "Transferencias Internacionales de Datos",
+      "intro": "Sus datos pueden ser transferidos y procesados en países distintos a su país de residencia. Estos países pueden tener leyes de protección de datos diferentes a las leyes de su país.",
+      "safeguards": "Cuando transferimos datos internacionalmente, implementamos salvaguardas apropiadas para asegurar que sus datos reciban una protección adecuada, incluyendo:",
+      "safeguard1": "Cláusulas contractuales estándar aprobadas por la Comisión Europea",
+      "safeguard2": "Transferencia a países con decisiones adecuadas de protección de datos",
+      "safeguard3": "Normas corporativas vinculantes para transferencias dentro de nuestro grupo corporativo",
+      "safeguard4": "Otras salvaguardas apropiadas según lo requiera la ley aplicable"
+    },
+    "complaints": {
+      "title": "Procedimientos de Quejas",
+      "intro": "Si tiene dudas sobre cómo manejamos sus datos personales, le recomendamos que nos contacte primero para que podamos abordar sus preocupaciones. Sin embargo, también tiene derecho a presentar una queja ante una autoridad de supervisión.",
+      "lodgeTitle": "Derecho a Presentar una Queja",
+      "lodgeContent": "Si se encuentra en el Área Económica Europea (AEE), tiene derecho a presentar una queja ante la autoridad de supervisión de su estado miembro. Puede encontrar los datos de contacto de su autoridad nacional de protección de datos en el sitio web de la Junta Europea de Protección de Datos.",
+      "authoritiesTitle": "Ejemplo de Autoridades de Supervisión:",
+      "germany": "Alemania: Bundesbeauftragte für den Datenschutz und die Informationsfreiheit (BfDI)",
+      "france": "Francia: Commission Nationale de l'Informatique et des Libertés (CNIL)",
+      "greece": "Grecia: Autoridad Helénica de Protección de Datos (HDPA)"
+    },
+    "changes": {
+      "title": "Cambios a Esta Política",
+      "content": "Podemos actualizar esta página de Protección de Datos ocasionalmente. Le notificaremos cualquier cambio importante publicando la política actualizada en esta página y actualizando la fecha de \"Última actualización\"."
+    },
+    "contact": {
+      "title": "Contáctenos",
+      "content": "Si tiene preguntas sobre esta política de Protección de Datos o desea ejercer sus derechos, contáctenos en:",
+      "companyName": "AI Dietitian",
+      "email": "Correo electrónico: privacy@aidietitian.com",
+      "address": "Dirección: [Dirección de la Empresa]"
+    }
+  }
+}

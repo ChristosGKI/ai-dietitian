@@ -1,0 +1,57 @@
+{
+  "termsOfService": {
+    "title": "Terms of Service",
+    "lastUpdated": "Last updated: January 2025",
+    "introduction": {
+      "title": "Introduction",
+      "content": "Welcome to AI Dietitian. These Terms of Service ('Terms') govern your access to and use of the AI Dietitian website, mobile application, and related services (collectively, the 'Service'). By accessing or using the Service, you agree to be bound by these Terms. If you do not agree, you must not use the Service."
+    },
+    "acceptance": {
+      "title": "Acceptance of Terms",
+      "content": "By creating an account, accessing the Service, or continuing to use it, you confirm that you accept these Terms and agree to comply with them. You must be at least 18 years old or have reached the age of majority in your jurisdiction to use the Service."
+    },
+    "medicalDisclaimer": {
+      "title": "Medical Disclaimer",
+      "content": "The Service provides general nutritional information and personalized dietary suggestions based on artificial intelligence. It is not a substitute for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare professional before making any changes to your diet, especially if you have medical conditions, allergies, or are pregnant. Reliance on any information provided by the Service is solely at your own risk."
+    },
+    "userAccounts": {
+      "title": "User Accounts",
+      "content": "You may be required to create an account to access certain features. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account. Notify us immediately of any unauthorized use."
+    },
+    "prohibited": {
+      "title": "Prohibited Activities",
+      "item1": "Using the Service for any unlawful purpose or in violation of applicable laws",
+      "item2": "Impersonating any person or entity or misrepresenting your affiliation",
+      "item3": "Interfering with or disrupting the Service or servers",
+      "item4": "Attempting to gain unauthorized access to any part of the Service",
+      "item5": "Uploading or transmitting viruses, malware, or harmful content"
+    },
+    "intellectualProperty": {
+      "title": "Intellectual Property",
+      "content": "The Service and its content, including text, graphics, logos, and software, are owned by AI Dietitian or its licensors and protected by copyright, trademark, and other intellectual property laws. You are granted a limited, non-transferable license to use the Service for personal, non-commercial purposes."
+    },
+    "termination": {
+      "title": "Termination",
+      "content": "We may suspend or terminate your access to the Service at any time, without notice, for conduct that violates these Terms or is otherwise harmful to the Service or other users."
+    },
+    "limitationOfLiability": {
+      "title": "Limitation of Liability",
+      "content": "To the fullest extent permitted by law, AI Dietitian shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly. Our total liability shall not exceed the amount you paid us in the 12 months prior to the claim."
+    },
+    "governingLaw": {
+      "title": "Governing Law",
+      "content": "These Terms are governed by and construed in accordance with the laws of Greece, without regard to conflict of law principles. Any disputes shall be resolved exclusively in the courts of Athens, Greece."
+    },
+    "changes": {
+      "title": "Changes to These Terms",
+      "content": "We may revise these Terms from time to time. The updated version will be posted on this page with a new 'Last updated' date. Your continued use of the Service after changes constitutes acceptance of the revised Terms."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "content": "If you have any questions about these Terms, please contact us at:",
+      "companyName": "AI Dietitian",
+      "email": "Email: support@aidietitian.com",
+      "address": "Address: [Company Address]"
+    }
+  }
+}

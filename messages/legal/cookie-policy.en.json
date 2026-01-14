@@ -1,0 +1,79 @@
+{
+  "cookiePolicy": {
+    "title": "Cookie Policy",
+    "lastUpdated": "Last updated: January 2025",
+    "intro": "This policy explains how AI Dietitian uses cookies and similar technologies.",
+    "whatAreCookies": {
+      "title": "What Are Cookies",
+      "content": "Cookies are small text files that are stored on your device (computer, tablet, or mobile phone) when you visit a website. They are widely used to make websites work more efficiently and provide information to the owners of the site. Cookies help us recognize your device, remember your preferences, and improve your experience on our platform."
+    },
+    "sections": {
+      "typesOfCookies": {
+        "title": "Types of Cookies We Use"
+      }
+    },
+    "essential": {
+      "title": "Essential Cookies",
+      "content": "These cookies are necessary for the website to function properly. They enable core functionality such as page navigation, language selection, and access to secure areas of the site. The website cannot function properly without these cookies. They are usually set in response to your actions like setting privacy preferences, logging in, or filling in forms."
+    },
+    "functional": {
+      "title": "Functional Cookies",
+      "content": "These cookies allow us to remember choices you make (such as your username, language preference, or region) and provide enhanced, more personal features. They may also be used to remember changes you've made to text size, fonts, and other customizable elements of the website."
+    },
+    "analytics": {
+      "title": "Analytics Cookies",
+      "content": "These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously. They help us identify which pages are most and least popular and understand how visitors move around the site. This information helps us improve our website and services."
+    },
+    "languageCookies": {
+      "title": "Cookies and Language Selection",
+      "content": "AI Dietitian uses cookies to enhance your language selection experience. When you choose a language preference using our language selector, we may set a cookie to remember your selection. This ensures that:",
+      "benefit1": "Your preferred language is remembered for future visits",
+      "benefit2": "You don't need to select your language each time you return to the site",
+      "benefit3": "Your session remains consistent as you navigate through different pages",
+      "benefit4": "The application can properly route you to the correct language version of content"
+    },
+    "cookieDuration": {
+      "title": "Cookie Duration",
+      "content": "Cookies may remain on your device for different periods of time:",
+      "sessionTitle": "Session Cookies:",
+      "sessionContent": "These temporary cookies are deleted when you close your browser.",
+      "persistentTitle": "Persistent Cookies:",
+      "persistentContent": "These remain on your device for a set period (usually up to 12 months) or until you manually delete them."
+    },
+    "thirdParty": {
+      "title": "Third-Party Cookies",
+      "content": "Some cookies are placed by third-party services that appear on our pages. We may allow third-party companies to set cookies when you visit our website to help us analyze how the site is used, to provide social media features, or to deliver relevant advertising. These third parties have their own privacy policies governing how they use your information."
+    },
+    "manageCookies": {
+      "title": "How to Manage Cookies",
+      "content": "Most web browsers allow you to control cookies through their settings. You can typically:",
+      "option1": "View cookies stored on your device",
+      "option2": "Delete all or specific cookies",
+      "option3": "Block cookies from all or specific websites",
+      "option4": "Set preferences for first-party and third-party cookies",
+      "warning": "Please note that blocking or deleting cookies may affect your experience on our website and may prevent some features from working properly."
+    },
+    "browserInstructions": {
+      "title": "Browser-Specific Instructions:",
+      "chrome": "Settings → Privacy and Security → Cookies",
+      "firefox": "Settings → Privacy & Security → Cookies",
+      "safari": "Preferences → Privacy → Cookies",
+      "edge": "Settings → Cookies and Site Permissions"
+    },
+    "dnt": {
+      "title": "Do Not Track",
+      "content": "Some browsers have a \"Do Not Track\" (DNT) feature that signals to websites that you do not want to be tracked. Currently, there is no industry standard for handling DNT signals, so our website does not respond to DNT signals at this time."
+    },
+    "updates": {
+      "title": "Changes to This Cookie Policy",
+      "content": "We may update this Cookie Policy from time to time to reflect changes in technology, legislation, or our business practices. We will notify you of any material changes by posting the updated policy on this page with an updated revision date."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "content": "If you have questions about our use of cookies, please contact us at:",
+      "companyName": "AI Dietitian",
+      "email": "Email: privacy@aidietitian.com",
+      "address": "Address: [Company Address]"
+    }
+  }
+}

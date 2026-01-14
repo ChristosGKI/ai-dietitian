@@ -1,0 +1,111 @@
+{
+  "dataProtection": {
+    "title": "Data Protection",
+    "lastUpdated": "Last updated: January 2025",
+    "overview": {
+      "title": "Overview",
+      "content": "AI Dietitian is committed to protecting your personal data and ensuring compliance with applicable data protection laws, including the General Data Protection Regulation (GDPR) for users in the European Economic Area (EEA). This page outlines our data protection practices, your rights, and how we handle your information."
+    },
+    "processingActivities": {
+      "title": "Data Processing Activities"
+    },
+    "categories": {
+      "title": "Categories of Data We Process",
+      "identityTitle": "Identity Data:",
+      "identityContent": "Name, username, or similar identifier",
+      "contactTitle": "Contact Data:",
+      "contactContent": "Email address, phone number, or postal address",
+      "healthTitle": "Health Data:",
+      "healthContent": "Dietary preferences, allergies, health goals, and nutritional requirements",
+      "technicalTitle": "Technical Data:",
+      "technicalContent": "IP address, browser type, operating system, and device information",
+      "usageTitle": "Usage Data:",
+      "usageContent": "Information about how you use our services",
+      "preferenceTitle": "Preference Data:",
+      "preferenceContent": "Language preference and communication preferences"
+    },
+    "purposes": {
+      "title": "Purposes of Processing",
+      "content": "We process your data for the following purposes:",
+      "purpose1": "Providing personalized nutritional recommendations",
+      "purpose2": "Improving and optimizing our AI services",
+      "purpose3": "Managing your account and providing customer support",
+      "purpose4": "Sending administrative messages and updates",
+      "purpose5": "Complying with legal obligations",
+      "purpose6": "Analyzing usage patterns to enhance user experience"
+    },
+    "securityMeasures": {
+      "title": "Security Measures",
+      "intro": "We implement appropriate technical and organizational measures to protect your personal data:",
+      "encryptionTitle": "Encryption:",
+      "encryptionContent": "Data is encrypted in transit using TLS/SSL protocols and at rest using industry-standard encryption",
+      "accessTitle": "Access Controls:",
+      "accessContent": "Role-based access controls limit data access to authorized personnel only",
+      "infrastructureTitle": "Secure Infrastructure:",
+      "infrastructureContent": "Our systems are hosted in secure data centers with physical access controls",
+      "auditsTitle": "Regular Audits:",
+      "auditsContent": "Security assessments and vulnerability scans are conducted regularly",
+      "minimizationTitle": "Data Minimization:",
+      "minimizationContent": "We only collect data necessary for the purposes stated",
+      "trainingTitle": "Employee Training:",
+      "trainingContent": "Staff receive regular data protection and security training"
+    },
+    "dataRetention": {
+      "title": "Data Retention Periods",
+      "intro": "We retain your personal data only for as long as necessary to fulfill the purposes for which it was collected. Specific retention periods are based on:",
+      "factor1": "The purpose for which the data was collected",
+      "factor2": "Legal and regulatory requirements",
+      "factor3": "The nature of the data (especially sensitive health data)",
+      "factor4": "Our legitimate business interests",
+      "healthNote": "Health and nutritional data is typically retained for the duration of your account plus a reasonable period thereafter to allow for account reactivation. Account data is deleted within 30 days of account closure request, except where retention is required by law."
+    },
+    "userRights": {
+      "title": "Your Rights",
+      "intro": "Under applicable data protection laws, you have the following rights regarding your personal data:",
+      "accessTitle": "Right to Access",
+      "accessContent": "You can request a copy of the personal data we hold about you.",
+      "rectificationTitle": "Right to Rectification",
+      "rectificationContent": "You can request correction of inaccurate or incomplete data.",
+      "erasureTitle": "Right to Erasure",
+      "erasureContent": "You can request deletion of your personal data (\"right to be forgotten\").",
+      "restrictionTitle": "Right to Restriction",
+      "restrictionContent": "You can request that we limit how we use your data.",
+      "portabilityTitle": "Right to Portability",
+      "portabilityContent": "You can request transfer of your data to another service provider.",
+      "objectionTitle": "Right to Object",
+      "objectionContent": "You can object to processing based on legitimate interests.",
+      "exerciseTitle": "How to Exercise Your Rights",
+      "exerciseContent": "To exercise any of these rights, please contact us using the information provided at the end of this page. We will respond to your request within 30 days. We may need to verify your identity before processing certain requests."
+    },
+    "internationalTransfers": {
+      "title": "International Data Transfers",
+      "intro": "Your data may be transferred to and processed in countries other than your country of residence. These countries may have data protection laws that are different from the laws of your country.",
+      "safeguards": "When we transfer data internationally, we implement appropriate safeguards to ensure your data receives adequate protection, including:",
+      "safeguard1": "Standard contractual clauses approved by the European Commission",
+      "safeguard2": "Transfer to countries with adequate data protection decisions",
+      "safeguard3": "Binding corporate rules for transfers within our corporate group",
+      "safeguard4": "Other appropriate safeguards as required by applicable law"
+    },
+    "complaints": {
+      "title": "Complaint Procedures",
+      "intro": "If you have concerns about how we handle your personal data, we encourage you to contact us first so we can address your concerns. However, you also have the right to lodge a complaint with a supervisory authority.",
+      "lodgeTitle": "Right to Lodge a Complaint",
+      "lodgeContent": "If you are located in the European Economic Area (EEA), you have the right to lodge a complaint with the supervisory authority in your member state. You can find contact details for your national data protection authority on the European Data Protection Board website.",
+      "authoritiesTitle": "Example Supervisory Authorities:",
+      "germany": "Germany: Bundesbeauftragte für den Datenschutz und die Informationsfreiheit (BfDI)",
+      "france": "France: Commission Nationale de l'Informatique et des Libertés (CNIL)",
+      "greece": "Greece: Hellenic Data Protection Authority (HDPA)"
+    },
+    "changes": {
+      "title": "Changes to This Policy",
+      "content": "We may update this Data Protection page from time to time. We will notify you of any material changes by posting the updated policy on this page and updating the \"Last updated\" date."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "content": "If you have questions about this Data Protection policy or wish to exercise your rights, please contact us at:",
+      "companyName": "AI Dietitian",
+      "email": "Email: privacy@aidietitian.com",
+      "address": "Address: [Company Address]"
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "cookiePolicy": {
+    "title": "Política de Cookies",
+    "lastUpdated": "Última actualización: Enero 2025",
+    "intro": "Esta política explica cómo AI Dietitian utiliza cookies y tecnologías similares.",
+    "whatAreCookies": {
+      "title": "Qué son las Cookies",
+      "content": "Las cookies son pequeños archivos de texto que se almacenan en su dispositivo (computadora, tableta o teléfono móvil) cuando visita un sitio web. Se utilizan ampliamente para hacer que los sitios web funcionen de manera más eficiente y proporcionar información a los propietarios del sitio. Las cookies nos ayudan a reconocer su dispositivo, recordar sus preferencias y mejorar su experiencia en nuestra plataforma."
+    },
+    "sections": {
+      "typesOfCookies": {
+        "title": "Tipos de Cookies que Utilizamos"
+      }
+    },
+    "essential": {
+      "title": "Cookies Esenciales",
+      "content": "Estas cookies son necesarias para que el sitio web funcione correctamente. Habilitan funcionalidades básicas como la navegación por páginas, la selección de idioma y el acceso a áreas seguras del sitio. El sitio web no puede funcionar correctamente sin estas cookies. Por lo general, se establecen en respuesta a sus acciones como configurar preferencias de privacidad, iniciar sesión o completar formularios."
+    },
+    "functional": {
+      "title": "Cookies Funcionales",
+      "content": "Estas cookies nos permiten recordar las elecciones que realiza (como su nombre de usuario, preferencia de idioma o región) y proporcionar características mejoradas y más personales. También pueden usarse para recordar cambios que ha realizado en el tamaño de texto, fuentes y otros elementos personalizables del sitio web."
+    },
+    "analytics": {
+      "title": "Cookies Analíticas",
+      "content": "Estas cookies nos ayudan a entender cómo interactúan los visitantes con nuestro sitio web al recopilar y reportar información de forma anónima. Nos ayudan a identificar qué páginas son más y menos populares y a entender cómo se mueven los visitantes por el sitio. Esta información nos ayuda a mejorar nuestro sitio web y servicios."
+    },
+    "languageCookies": {
+      "title": "Cookies y Selección de Idioma",
+      "content": "AI Dietitian utiliza cookies para mejorar su experiencia de selección de idioma. Cuando elige una preferencia de idioma utilizando nuestro selector de idioma, podemos establecer una cookie para recordar su selección. Esto asegura que:",
+      "benefit1": "Su idioma preferido se recuerda para futuras visitas",
+      "benefit2": "No necesita seleccionar su idioma cada vez que regrese al sitio",
+      "benefit3": "Su sesión permanece consistente mientras navega por diferentes páginas",
+      "benefit4": "La aplicación puede enrutarle correctamente a la versión correcta del contenido en su idioma"
+    },
+    "cookieDuration": {
+      "title": "Duración de las Cookies",
+      "content": "Las cookies pueden permanecer en su dispositivo durante diferentes períodos de tiempo:",
+      "sessionTitle": "Cookies de Sesión:",
+      "sessionContent": "Estas cookies temporales se eliminan cuando cierra su navegador.",
+      "persistentTitle": "Cookies Persistentes:",
+      "persistentContent": "Estas permanecen en su dispositivo durante un período establecido (generalmente hasta 12 meses) o hasta que las elimine manualmente."
+    },
+    "thirdParty": {
+      "title": "Cookies de Terceros",
+      "content": "Algunas cookies son colocadas por servicios de terceros que aparecen en nuestras páginas. Podemos permitir que empresas de terceros establezcan cookies cuando visita nuestro sitio web para ayudarnos a analizar cómo se usa el sitio, proporcionar funciones de redes sociales o entregar publicidad relevante. Estos terceros tienen sus propias políticas de privacidad que rigen cómo usan su información."
+    },
+    "manageCookies": {
+      "title": "Cómo Gestionar las Cookies",
+      "content": "La mayoría de los navegadores web le permiten controlar las cookies a través de su configuración. Por lo general, puede:",
+      "option1": "Ver las cookies almacenadas en su dispositivo",
+      "option2": "Eliminar todas las cookies o cookies específicas",
+      "option3": "Bloquear cookies de todos o sitios web específicos",
+      "option4": "Establecer preferencias para cookies de primeros y terceros",
+      "warning": "Tenga en cuenta que bloquear o eliminar cookies puede afectar su experiencia en nuestro sitio web y puede evitar que algunas funciones funcionen correctamente."
+    },
+    "browserInstructions": {
+      "title": "Instrucciones Específicas del Navegador:",
+      "chrome": "Configuración → Privacidad y Seguridad → Cookies",
+      "firefox": "Configuración → Privacidad y Seguridad → Cookies",
+      "safari": "Preferencias → Privacidad → Cookies",
+      "edge": "Configuración → Cookies y Permisos del Sitio"
+    },
+    "dnt": {
+      "title": "Do Not Track",
+      "content": "Algunos navegadores tienen una función \"Do Not Track\" (DNT) que indica a los sitios web que no desea ser rastreado. Actualmente, no existe un estándar de la industria para manejar señales DNT, por lo que nuestro sitio web no responde a señales DNT en este momento."
+    },
+    "updates": {
+      "title": "Cambios a Esta Política de Cookies",
+      "content": "Podemos actualizar esta Política de Cookies de vez en cuando para reflejar cambios en tecnología, legislación o nuestras prácticas comerciales. Le notificaremos cualquier cambio importante publicando la política actualizada en esta página con una fecha de revisión actualizada."
+    },
+    "contact": {
+      "title": "Contáctenos",
+      "content": "Si tiene preguntas sobre nuestro uso de cookies, contáctenos en:",
+      "companyName": "AI Dietitian",
+      "email": "Correo electrónico: privacy@aidietitian.com",
+      "address": "Dirección: [Dirección de la Empresa]"
+    }
+  }
+}

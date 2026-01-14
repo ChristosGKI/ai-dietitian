@@ -1,0 +1,31 @@
+{
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: January 2025",
+    "intro": "AI Dietitian is committed to protecting your privacy. This policy explains how we collect, use, and safeguard your information.",
+    "dataCollection": {
+      "title": "Information We Collect",
+      "content": "We collect information you provide directly, including personal details, health information, and dietary preferences."
+    },
+    "dataUsage": {
+      "title": "How We Use Your Information",
+      "content": "Your data is used to provide personalized diet recommendations, improve our services, and communicate with you."
+    },
+    "userRights": {
+      "title": "Your Rights",
+      "content": "Under GDPR, you have the right to access, rectify, erase, restrict processing, and port your data."
+    },
+    "dataProtection": {
+      "title": "Data Protection",
+      "content": "We implement appropriate technical and organizational measures to protect your personal data."
+    },
+    "dataSharing": {
+      "title": "Data Sharing",
+      "content": "We do not sell your data. We may share it with service providers who help us operate our platform."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "content": "For privacy inquiries, please contact us through our support channels."
+    }
+  }
+}

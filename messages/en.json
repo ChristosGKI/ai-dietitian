@@ -1,0 +1,393 @@
+{
+  "common": {
+    "backToHome": "Back to Home"
+  },
+  "homeTitle": "AI Dietitian",
+  "homeDescription": "Get your personalized diet plan powered by AI. Start your journey to better health today.",
+  "homeGetStarted": "Get Started!",
+  "home": {
+    "title": "AI Dietitian",
+    "description": "Get your personalized diet plan powered by AI. Start your journey to better health today.",
+    "getStarted": "Get Started!"
+  },
+  "wizard": {
+    "name": {
+      "aiDietitian": "AI Dietitian Onboarding",
+      "onboarding": "Onboarding"
+    },
+    "phases": {
+      "stepCounter": "Step {current} of {total}",
+      "lead-capture": {
+        "title": "Welcome",
+        "description": "Let's start with your contact details"
+      },
+      "basics": {
+        "title": "The Basics",
+        "description": "Let's start with the fundamentals"
+      },
+      "kitchen": {
+        "title": "Kitchen Reality",
+        "description": "Help us understand your cooking habits"
+      },
+      "blacklist": {
+        "title": "The Blacklist",
+        "description": "Foods that are off-limits"
+      },
+      "activity": {
+        "title": "Movement",
+        "description": "How active are you?"
+      },
+      "lifestyle": {
+        "title": "Vices & Lifestyle",
+        "description": "The fun stuff"
+      },
+      "goals": {
+        "title": "Your Goals",
+        "description": "What do you want to achieve?"
+      },
+      "body-metrics": {
+        "title": "Body Metrics",
+        "description": "Help us understand your body"
+      },
+      "nutrition": {
+        "title": "Nutrition Preferences",
+        "description": "Customize your diet"
+      },
+      "feedback": {
+        "title": "Your Feedback",
+        "description": "Help us improve"
+      }
+    },
+    "steps": {
+      "name": {
+        "question": "What is your name?",
+        "placeholder": "Enter your full name"
+      },
+      "email": {
+        "question": "Where should we send your plan?",
+        "placeholder": "Enter your email address"
+      },
+      "gender": {
+        "question": "How do you identify?"
+      },
+      "age": {
+        "question": "What's your age?"
+      },
+      "weight": {
+        "question": "What's your weight?"
+      },
+      "height": {
+        "question": "How tall are you?"
+      },
+      "whoCooks": {
+        "question": "Who handles the cooking?"
+      },
+      "cookingSkill": {
+        "question": "How comfortable are you in the kitchen?"
+      },
+      "hatedFoods": {
+        "question": "Which foods are you not a fan of?"
+      },
+      "specificExclusions": {
+        "question": "Any specific foods to avoid?",
+        "placeholder": "Search for foods to exclude..."
+      },
+      "activityLevel": {
+        "question": "How would you describe your activity level?"
+      },
+      "socialLife": {
+        "question": "How's your social life?"
+      },
+      "sweetSavory": {
+        "question": "Sweet tooth or savory cravings?"
+      },
+      "goal": {
+        "question": "What is your main goal?"
+      },
+      "activity": {
+        "question": "How would you describe your activity level?"
+      },
+      "dietType": {
+        "question": "What type of diet do you follow?"
+      },
+      "allergies": {
+        "question": "Do you have any allergies?",
+        "placeholder": "Search for allergies..."
+      },
+      "satisfaction": {
+        "question": "How satisfied are you with your current diet?"
+      }
+    },
+    "rating": {
+      "veryLow": "Very Low",
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High",
+      "veryHigh": "Very High"
+    },
+    "buttons": {
+      "back": "Back",
+      "next": "Next",
+      "submit": "Submit",
+      "submitting": "Submitting..."
+    },
+    "options": {
+      "male": "Male",
+      "female": "Female",
+      "me": "Me",
+      "partnerFamily": "Partner/Family",
+      "orderingTakeout": "Ordering/Takeout",
+      "fish": "Fish",
+      "broccoli": "Broccoli",
+      "mushrooms": "Mushrooms",
+      "avocado": "Avocado",
+      "dairy": "Dairy",
+      "cilantro": "Cilantro",
+      "sedentary": "Sedentary",
+      "light": "Light",
+      "moderate": "Moderate",
+      "active": "Active",
+      "veryActive": "Very Active",
+      "monkMode": "Monk Mode",
+      "socialButterfly": "Social Butterfly",
+      "partyAnimal": "Party Animal",
+      "sweetTooth": "Sweet Tooth",
+      "savoryCravings": "Savory Cravings",
+      "weightLoss": "Weight Loss",
+      "muscleGain": "Muscle Gain",
+      "maintenance": "Maintenance",
+      "healthImprovement": "Health Improvement",
+      "omnivore": "Omnivore",
+      "vegetarian": "Vegetarian",
+      "vegan": "Vegan",
+      "keto": "Keto",
+      "paleo": "Paleo"
+    }
+  },
+  "paymentSuccess": {
+    "title": "Payment Successful!",
+    "description": "Your diet is being generated. Check your email in 2 minutes.",
+    "emailNotice": "📧 A confirmation email with your personalized diet plan will be sent to your inbox shortly.",
+    "returnHome": "Return Home"
+  },
+  "paymentCancel": {
+    "title": "Payment Cancelled",
+    "description": "You cancelled the payment process.",
+    "tryAgain": "Try Again"
+  },
+  "phases": {
+    "lead-capture": {
+      "title": "Welcome",
+      "description": "Let's start with your contact details"
+    },
+    "basics": {
+      "title": "The Basics",
+      "description": "Let's start with the fundamentals"
+    },
+    "kitchen": {
+      "title": "Kitchen Reality",
+      "description": "Help us understand your cooking habits"
+    },
+    "blacklist": {
+      "title": "The Blacklist",
+      "description": "Foods that are off-limits"
+    },
+    "activity": {
+      "title": "Movement",
+      "description": "How active are you?"
+    },
+    "lifestyle": {
+      "title": "Vices & Lifestyle",
+      "description": "The fun stuff"
+    }
+  },
+  "steps": {
+    "name": {
+      "question": "What is your name?",
+      "placeholder": "Enter your full name"
+    },
+    "email": {
+      "question": "Where should we send your plan?",
+      "placeholder": "Enter your email address"
+    },
+    "gender": {
+      "question": "How do you identify?"
+    },
+    "age": {
+      "question": "What's your age?"
+    },
+    "weight": {
+      "question": "What's your weight?"
+    },
+    "height": {
+      "question": "How tall are you?"
+    },
+    "whoCooks": {
+      "question": "Who handles the cooking?"
+    },
+    "cookingSkill": {
+      "question": "How comfortable are you in the kitchen?"
+    },
+    "hatedFoods": {
+      "question": "Which foods are you not a fan of?"
+    },
+    "specificExclusions": {
+      "question": "Any specific foods to avoid?",
+      "placeholder": "Search for foods to exclude..."
+    },
+    "activityLevel": {
+      "question": "How would you describe your activity level?"
+    },
+    "socialLife": {
+      "question": "How's your social life?"
+    },
+    "sweetSavory": {
+      "question": "Sweet tooth or savory cravings?"
+    }
+  },
+  "options": {
+    "male": "Male",
+    "female": "Female",
+    "me": "Me",
+    "partnerFamily": "Partner/Family",
+    "orderingTakeout": "Ordering/Takeout",
+    "fish": "Fish",
+    "broccoli": "Broccoli",
+    "mushrooms": "Mushrooms",
+    "avocado": "Avocado",
+    "dairy": "Dairy",
+    "cilantro": "Cilantro",
+    "sedentary": "Sedentary",
+    "light": "Light",
+    "moderate": "Moderate",
+    "active": "Active",
+    "monkMode": "Monk Mode",
+    "socialButterfly": "Social Butterfly",
+    "partyAnimal": "Party Animal",
+    "sweetTooth": "Sweet Tooth",
+    "savoryCravings": "Savory Cravings"
+  },
+  "languageSelector": {
+    "title": "Choose Your Language",
+    "subtitle": "Select your preferred language to continue",
+    "english": "English",
+    "spanish": "Español",
+    "greek": "Ελληνικά",
+    "gdprConsent": "By selecting a language, you consent to the processing of your language preference data. Read our {privacyPolicy} and {cookiePolicy} for more information.",
+    "privacyPolicy": "Privacy Policy",
+    "cookiePolicy": "Cookie Policy"
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: January 2025",
+    "intro": "AI Dietitian is committed to protecting your privacy. This policy explains how we collect, use, and safeguard your information.",
+    "sections": {
+      "dataCollection": {
+        "title": "Information We Collect",
+        "content": "We collect information you provide directly, including personal details, health information, and dietary preferences."
+      },
+      "dataUsage": {
+        "title": "How We Use Your Information",
+        "content": "Your data is used to provide personalized diet recommendations, improve our services, and communicate with you."
+      },
+      "userRights": {
+        "title": "Your Rights",
+        "content": "Under GDPR, you have the right to access, rectify, erase, restrict processing, and port your data."
+      },
+      "dataProtection": {
+        "title": "Data Protection",
+        "content": "We implement appropriate technical and organizational measures to protect your personal data."
+      },
+      "dataSharing": {
+        "title": "Data Sharing",
+        "content": "We do not sell your data. We may share it with service providers who help us operate our platform."
+      },
+      "contact": {
+        "title": "Contact Us",
+        "content": "For privacy inquiries, please contact us through our support channels."
+      }
+    }
+  },
+  "cookiePolicy": {
+    "title": "Cookie Policy",
+    "lastUpdated": "Last updated: January 2025",
+    "intro": "This policy explains how AI Dietitian uses cookies and similar technologies.",
+    "sections": {
+      "whatAreCookies": {
+        "title": "What Are Cookies",
+        "content": "Cookies are small text files stored on your device that help us provide and improve our services."
+      },
+      "typesOfCookies": {
+        "title": "Types of Cookies We Use",
+        "essential": {
+          "title": "Essential Cookies",
+          "content": "Required for the website to function properly, including language preference cookies."
+        },
+        "functional": {
+          "title": "Functional Cookies",
+          "content": "Remember your preferences and settings."
+        },
+        "analytics": {
+          "title": "Analytics Cookies",
+          "content": "Help us understand how visitors interact with our website."
+        }
+      },
+      "languageCookies": {
+        "title": "Language Selector Cookies",
+        "content": "When you select a language, we store your preference in a cookie so we can show you the site in your chosen language on future visits."
+      },
+      "cookieDuration": {
+        "title": "Cookie Duration",
+        "content": "Session cookies expire when you close your browser. Persistent cookies remain for up to 12 months."
+      },
+      "thirdParty": {
+        "title": "Third-Party Cookies",
+        "content": "We may use third-party services that set their own cookies for analytics and functionality."
+      },
+      "manageCookies": {
+        "title": "Managing Cookies",
+        "content": "Most browsers allow you to block, delete, or manage cookies through their settings."
+      },
+      "dnt": {
+        "title": "Do Not Track",
+        "content": "Our website does not currently respond to Do Not Track signals."
+      }
+    }
+  },
+  "dataProtection": {
+    "title": "Data Protection",
+    "lastUpdated": "Last updated: January 2025",
+    "intro": "This page provides detailed information about how we protect and process your personal data.",
+    "sections": {
+      "processingActivities": {
+        "title": "Data Processing Activities",
+        "content": "We process data for account management, diet recommendations, service improvement, and communication."
+      },
+      "securityMeasures": {
+        "title": "Security Measures",
+        "content": "We use encryption, access controls, regular audits, and secure infrastructure to protect your data."
+      },
+      "dataRetention": {
+        "title": "Data Retention",
+        "content": "We retain your data for as long as your account is active or as needed to provide services."
+      },
+      "userRights": {
+        "title": "Your Rights",
+        "access": "Access your personal data",
+        "rectification": "Correct inaccurate data",
+        "erasure": "Request deletion of your data",
+        "restriction": "Restrict data processing",
+        "portability": "Receive your data in a portable format",
+        "objection": "Object to data processing"
+      },
+      "internationalTransfers": {
+        "title": "International Data Transfers",
+        "content": "Your data may be transferred outside the EU with appropriate safeguards in place."
+      },
+      "complaints": {
+        "title": "Filing a Complaint",
+        "content": "You have the right to lodge a complaint with your local data protection supervisory authority."
+      }
+    }
+  }
+}
