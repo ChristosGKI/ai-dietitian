@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AI Dietitian",
-  description: "Get your personalized diet plan powered by AI",
+  title: "FoodBrain - AI Powered Diet Planner",
+  description: "Personalized meal plans and nutrition advice using AI technology.",
 };
 
 export default function RootLayout({

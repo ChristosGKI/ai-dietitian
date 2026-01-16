@@ -343,7 +343,7 @@ const lifestylePhase: WizardPhase = {
 // ============================================================================
 
 export const wizardData: WizardConfig = {
-  id: 'ai-dietitian',
+  id: 'foodbrain',
   name: 'wizard.name.aiDietitian',
   phases: [leadCapturePhase, basicsPhase, kitchenPhase, blacklistPhase, activityPhase, lifestylePhase],
 };

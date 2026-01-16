@@ -450,7 +450,7 @@ disabled={!isCurrentStepAnswered || isSubmitting}
 ```typescript
 // geo.ts:85
 const response = await fetch(`https://ipapi.co/${ip}/json/`, {
-  headers: { 'User-Agent': 'AI-Dietitian/1.0' },
+  headers: { 'User-Agent': 'Foodbrain/1.0' },
 });
 // Single provider - no fallback or caching beyond 1 hour
 ```

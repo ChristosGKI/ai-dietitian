@@ -5,7 +5,7 @@ The AI Dietitian project follows a clean, modular architecture using Next.js App
 ## Directory Overview
 
 ```
-ai-dietitian/
+foodbrain/
 ├── docs/                          # Documentation files
 ├── prisma/                        # Database schema and migrations
 ├── public/                        # Static assets

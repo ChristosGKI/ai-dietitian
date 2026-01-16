@@ -57,7 +57,7 @@ Stripe checkout integration for premium subscriptions:
 ## 📁 Project Structure
 
 ```
-ai-dietitian/
+foodbrain/
 ├── docs/                    # Documentation
 ├── prisma/                  # Database schema & migrations
 ├── public/                  # Static assets
@@ -91,7 +91,7 @@ ai-dietitian/
 1. Clone the repository:
 ```bash
 git clone <repository-url>
-cd ai-dietitian
+cd foodbrain
 ```
 
 2. Install dependencies:
@@ -106,7 +106,7 @@ cp .env.local.example .env.local
 
 4. Configure your `.env.local`:
 ```env
-DATABASE_URL="postgresql://user:password@localhost:5432/ai-dietitian"
+DATABASE_URL="postgresql://user:password@localhost:5432/foodbrain"
 STRIPE_SECRET_KEY="sk_test_..."
 NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY="pk_test_..."
 NEXT_PUBLIC_APP_URL="http://localhost:3000"

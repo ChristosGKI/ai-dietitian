@@ -25,7 +25,7 @@ The wizard is organized into six distinct phases, each collecting specific types
 
 ```
 wizardData (WizardConfig)
-├── id: 'ai-dietitian'
+├── id: 'foodbrain'
 ├── name: 'wizard.name.aiDietitian'
 └── phases: WizardPhase[]
     ├── lead-capture phase
@@ -415,7 +415,7 @@ const newPhase: WizardPhase = {
 
 // Add to phases array
 export const wizardData: WizardConfig = {
-  id: 'ai-dietitian',
+  id: 'foodbrain',
   name: 'wizard.name.aiDietitian',
   phases: [
     leadCapturePhase,

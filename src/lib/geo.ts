@@ -84,7 +84,7 @@ export async function getCountryFromIP(ip: string): Promise<string | null> {
     // Using ipapi.co - free tier allows 1000 requests/day
     const response = await fetch(`https://ipapi.co/${ip}/json/`, {
       headers: {
-        'User-Agent': 'AI-Dietitian/1.0',
+        'User-Agent': 'Foodbrain/1.0',
       },
     });
 
