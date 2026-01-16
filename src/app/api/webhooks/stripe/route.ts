@@ -43,8 +43,9 @@ export async function POST(request: Request) {
           await prisma.user.update({
             where: { id: userId },
             data: {
-              paymentId: session.payment_intent as string,
-              paymentStatus: 'COMPLETED',
+              stripeSubscriptionId: session.subscription as string,
+              subscriptionStatus: 'active',
+              lastPaymentDate: new Date(),
             },
           });
         }
@@ -58,8 +59,9 @@ export async function POST(request: Request) {
           await prisma.user.update({
             where: { id: userId },
             data: {
-              paymentId: session.payment_intent as string,
-              paymentStatus: 'COMPLETED',
+              stripeSubscriptionId: session.subscription as string,
+              subscriptionStatus: 'active',
+              lastPaymentDate: new Date(),
             },
           });
         }
@@ -73,7 +75,7 @@ export async function POST(request: Request) {
           await prisma.user.update({
             where: { id: userId },
             data: {
-              paymentStatus: 'FAILED',
+              subscriptionStatus: 'failed',
             },
           });
         }
