@@ -167,10 +167,10 @@ export async function saveProgress(
       create: {
         email: encryptedEmail || '',
         name: encryptedData.name,
-        kitchenHabits: validatedData.kitchenHabits,
-        dietaryPrefs: validatedData.dietaryPrefs,
-        activityProfile: validatedData.activityProfile,
-        lifestyleProfile: validatedData.lifestyleProfile,
+        kitchenHabits: validatedData.kitchenHabits as any,
+        dietaryPrefs: validatedData.dietaryPrefs as any,
+        activityProfile: validatedData.activityProfile as any,
+        lifestyleProfile: validatedData.lifestyleProfile as any,
       },
     });
 

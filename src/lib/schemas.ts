@@ -24,7 +24,12 @@ export const step3Schema = z.object({
 });
 
 // Combined onboarding schema - all fields optional for partial updates
-export const onboardingSchema = step1Schema.merge(step2Schema).merge(step3Schema).partial();
+export const onboardingSchema = step1Schema.merge(step2Schema).merge(step3Schema).merge(z.object({
+  kitchenHabits: z.unknown().optional(),
+  dietaryPrefs: z.unknown().optional(),
+  activityProfile: z.unknown().optional(),
+  lifestyleProfile: z.unknown().optional(),
+})).partial();
 
 export type OnboardingData = z.infer<typeof onboardingSchema>;
 export type Step1Data = z.infer<typeof step1Schema>;
