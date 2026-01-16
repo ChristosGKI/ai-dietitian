@@ -2,7 +2,7 @@
   "cookiePolicy": {
     "title": "Política de Cookies",
     "lastUpdated": "Última actualización: Enero 2025",
-    "intro": "Esta política explica cómo AI Dietitian utiliza cookies y tecnologías similares.",
+    "intro": "Esta política explica cómo AI Dietitian utiliza cookies y tecnologías similares en cumplimiento con los requisitos del RGPD y la Directiva ePrivacy.",
     "whatAreCookies": {
       "title": "Qué son las Cookies",
       "content": "Las cookies son pequeños archivos de texto que se almacenan en su dispositivo (computadora, tableta o teléfono móvil) cuando visita un sitio web. Se utilizan ampliamente para hacer que los sitios web funcionen de manera más eficiente y proporcionar información a los propietarios del sitio. Las cookies nos ayudan a reconocer su dispositivo, recordar sus preferencias y mejorar su experiencia en nuestra plataforma."
@@ -14,15 +14,29 @@
     },
     "essential": {
       "title": "Cookies Esenciales",
-      "content": "Estas cookies son necesarias para que el sitio web funcione correctamente. Habilitan funcionalidades básicas como la navegación por páginas, la selección de idioma y el acceso a áreas seguras del sitio. El sitio web no puede funcionar correctamente sin estas cookies. Por lo general, se establecen en respuesta a sus acciones como configurar preferencias de privacidad, iniciar sesión o completar formularios."
+      "content": "Estas cookies son necesarias para que el sitio web funcione correctamente. Habilitan funcionalidades básicas como la navegación por páginas, la selección de idioma y el acceso a áreas seguras del sitio. El sitio web no puede funcionar correctamente sin estas cookies. Por lo general, se establecen en respuesta a sus acciones como configurar preferencias de privacidad, iniciar sesión o completar formularios.",
+      "examples": "Ejemplos incluyen: NEXT_LOCALE (preferencia de idioma), tokens de seguridad de sesión e identificadores de equilibrio de carga.",
+      "alwaysActive": "Estas cookies siempre están activas y no pueden deshabilitarse ya que son estrictamente necesarias para el funcionamiento del sitio web."
     },
     "functional": {
       "title": "Cookies Funcionales",
-      "content": "Estas cookies nos permiten recordar las elecciones que realiza (como su nombre de usuario, preferencia de idioma o región) y proporcionar características mejoradas y más personales. También pueden usarse para recordar cambios que ha realizado en el tamaño de texto, fuentes y otros elementos personalizables del sitio web."
+      "content": "Estas cookies nos permiten recordar las elecciones que realiza (como su nombre de usuario, preferencia de idioma o región) y proporcionar características mejoradas y más personales. También pueden usarse para recordar cambios que ha realizado en el tamaño de texto, fuentes y otros elementos personalizables del sitio web.",
+      "purpose": "Propósito: Recordar sus preferencias y proporcionar funcionalidad mejorada.",
+      "requiresConsent": "Estas cookies requieren su consentimiento explícito antes de establecerse."
     },
     "analytics": {
       "title": "Cookies Analíticas",
-      "content": "Estas cookies nos ayudan a entender cómo interactúan los visitantes con nuestro sitio web al recopilar y reportar información de forma anónima. Nos ayudan a identificar qué páginas son más y menos populares y a entender cómo se mueven los visitantes por el sitio. Esta información nos ayuda a mejorar nuestro sitio web y servicios."
+      "content": "Estas cookies nos ayudan a entender cómo interactúan los visitantes con nuestro sitio web al recopilar y reportar información de forma anónima. Nos ayudan a identificar qué páginas son más y menos populares y a entender cómo se mueven los visitantes por el sitio. Esta información nos ayuda a mejorar nuestro sitio web y servicios.",
+      "purpose": "Propósito: Analizar el rendimiento del sitio web y mejorar la experiencia del usuario.",
+      "requiresConsent": "Estas cookies requieren su consentimiento explícito antes de establecerse.",
+      "providers": "Usamos servicios de análisis como Google Analytics para recopilar esta información."
+    },
+    "marketing": {
+      "title": "Cookies de Marketing",
+      "content": "Estas cookies se utilizan para rastrear a los visitantes a través de sitios web para mostrar anuncios relevantes. Pueden ser establecidas por nuestros socios publicitarios para crear un perfil de sus intereses y mostrarle contenido personalizado en otros sitios que visite.",
+      "purpose": "Propósito: Deliver anuncios relevantes y medir la efectividad de la publicidad.",
+      "requiresConsent": "Estas cookies requieren su consentimiento explícito antes de establecerse.",
+      "providers": "Podemos usar servicios como Facebook Pixel para fines de marketing."
     },
     "languageCookies": {
       "title": "Cookies y Selección de Idioma",
@@ -32,17 +46,67 @@
       "benefit3": "Su sesión permanece consistente mientras navega por diferentes páginas",
       "benefit4": "La aplicación puede enrutarle correctamente a la versión correcta del contenido en su idioma"
     },
+    "legalBasis": {
+      "title": "Base Legal para el Uso de Cookies",
+      "content": "Bajo el RGPD y la Directiva ePrivacy, requerimos su consentimiento explícito antes de establecer cookies no esenciales en su dispositivo. Las cookies esenciales son necesarias para el funcionamiento del sitio web y no requieren consentimiento.",
+      "explicitConsent": "Obtenemos su consentimiento explícito para cookies funcionales, analíticas y de marketing a través de nuestro banner de consentimiento de cookies.",
+      "yourRights": "Tiene derecho a aceptar o rechazar cookies no esenciales, y a retirar su consentimiento en cualquier momento.",
+      "howWeCollect": "Recopilamos el consentimiento a través de nuestro banner de cookies cuando visita nuestro sitio web por primera vez, y a través de nuestro modal de preferencias de cookies cuando personaliza su configuración."
+    },
+    "consentManagement": {
+      "title": "Gestionando Sus Preferencias de Cookies",
+      "content": "Tiene control total sobre sus preferencias de cookies. Puede aceptar o rechazar cookies no esenciales en cualquier momento.",
+      "howToManage": {
+        "title": "Cómo Gestionar Sus Preferencias",
+        "banner": "Cuando visite nuestro sitio web por primera vez, aparecerá un banner de consentimiento de cookies que le permitirá Aceptar Todo, Rechazar Todo o Personalizar sus preferencias.",
+        "footer": "Puede cambiar sus preferencias en cualquier momento haciendo clic en 'Configuración de Cookies' en nuestro pie de página.",
+        "withdraw": "Para retirar todo el consentimiento, use la opción 'Retirar Consentimiento' en Configuración de Cookies o contáctenos."
+      },
+      "withdrawRights": {
+        "title": "Sus Derechos",
+        "right1": "Aceptar o rechazar cookies no esenciales",
+        "right2": "Cambiar sus preferencias en cualquier momento",
+        "right3": "Retirar todo el consentimiento con efecto inmediato",
+        "right4": "Solicitar una copia de sus registros de consentimiento"
+      },
+      "withdrawalProcess": {
+        "title": "Cómo Retirar el Consentimiento",
+        "content": "Para retirar su consentimiento, haga clic en el enlace 'Configuración de Cookies' en nuestro pie de página, luego haga clic en 'Retirar Todo el Consentimiento'. Esto detendrá inmediatamente todas las cookies no esenciales y eliminará las cookies de marketing y análisis existentes de su dispositivo.",
+        "immediateEffect": "Su retiro surte efecto inmediatamente. Las cookies de análisis y marketing se eliminarán de su dispositivo dentro de 24 horas."
+      }
+    },
     "cookieDuration": {
       "title": "Duración de las Cookies",
       "content": "Las cookies pueden permanecer en su dispositivo durante diferentes períodos de tiempo:",
       "sessionTitle": "Cookies de Sesión:",
       "sessionContent": "Estas cookies temporales se eliminan cuando cierra su navegador.",
       "persistentTitle": "Cookies Persistentes:",
-      "persistentContent": "Estas permanecen en su dispositivo durante un período establecido (generalmente hasta 12 meses) o hasta que las elimine manualmente."
+      "persistentContent": "Estas permanecen en su dispositivo durante un período establecido (generalmente hasta 12 meses) o hasta que las elimine manualmente.",
+      "consentRetention": "Los registros de consentimiento se conservan durante 12 meses a partir de la fecha del consentimiento, después de lo cual se le volverá a solicitar que proporcione consentimiento.",
+      "analyticsRetention": "Los datos analíticos se conservan durante 14 meses de acuerdo con los estándares de la industria."
     },
     "thirdParty": {
-      "title": "Cookies de Terceros",
-      "content": "Algunas cookies son colocadas por servicios de terceros que aparecen en nuestras páginas. Podemos permitir que empresas de terceros establezcan cookies cuando visita nuestro sitio web para ayudarnos a analizar cómo se usa el sitio, proporcionar funciones de redes sociales o entregar publicidad relevante. Estos terceros tienen sus propias políticas de privacidad que rigen cómo usan su información."
+      "title": "Cookies de Terceros y Servicios",
+      "content": "Algunas cookies son colocadas por servicios de terceros que aparecen en nuestras páginas. Permitimos que empresas de terceros establezcan cookies cuando visita nuestro sitio web para ayudarnos a analizar cómo se usa el sitio, proporcionar funciones de redes sociales o entregar publicidad relevante.",
+      "providers": {
+        "analytics": {
+          "title": "Servicios de Análisis",
+          "description": "Usamos servicios de análisis para entender cómo interactúan los visitantes con nuestro sitio web. Estos servicios pueden establecer cookies para recopilar información sobre su uso de nuestro sitio web.",
+          "providers": ["Google Analytics"]
+        },
+        "payment": {
+          "title": "Procesamiento de Pagos",
+          "description": "Nuestro procesador de pagos puede establecer cookies necesarias para el procesamiento de transacciones.",
+          "providers": ["Stripe"]
+        },
+        "marketing": {
+          "title": "Servicios de Marketing",
+          "description": "Los servicios de marketing nos ayudan a entregar anuncios relevantes y medir la efectividad de la publicidad.",
+          "providers": ["Facebook Pixel"]
+        }
+      },
+      "optOut": "Puede optar por no participar en el seguimiento de terceros a través de la configuración de su navegador o nuestro modal de preferencias de cookies.",
+      "privacyLinks": "Estos terceros tienen sus propias políticas de privacidad que rigen el uso de su información. Consulte sus políticas de privacidad para obtener más información."
     },
     "manageCookies": {
       "title": "Cómo Gestionar las Cookies",
@@ -51,7 +115,8 @@
       "option2": "Eliminar todas las cookies o cookies específicas",
       "option3": "Bloquear cookies de todos o sitios web específicos",
       "option4": "Establecer preferencias para cookies de primeros y terceros",
-      "warning": "Tenga en cuenta que bloquear o eliminar cookies puede afectar su experiencia en nuestro sitio web y puede evitar que algunas funciones funcionen correctamente."
+      "warning": "Tenga en cuenta que bloquear o eliminar cookies puede afectar su experiencia en nuestro sitio web y puede evitar que algunas funciones funcionen correctamente.",
+      "note": "Además de la configuración del navegador, puede gestionar sus preferencias a través de nuestro enlace de Configuración de Cookies en el pie de página en cualquier momento."
     },
     "browserInstructions": {
       "title": "Instrucciones Específicas del Navegador:",
@@ -62,11 +127,11 @@
     },
     "dnt": {
       "title": "Do Not Track",
-      "content": "Algunos navegadores tienen una función \"Do Not Track\" (DNT) que indica a los sitios web que no desea ser rastreado. Actualmente, no existe un estándar de la industria para manejar señales DNT, por lo que nuestro sitio web no responde a señales DNT en este momento."
+      "content": "Algunos navegadores tienen una función \"Do Not Track\" (DNT) que indica a los sitios web que no desea ser rastreado. Actualmente, no existe un estándar de la industria para manejar señales DNT, por lo que nuestro sitio web no responde a señales DNT en este momento. Sin embargo, puede gestionar sus preferencias de cookies a través de nuestro banner de consentimiento o la configuración de su navegador."
     },
     "updates": {
       "title": "Cambios a Esta Política de Cookies",
-      "content": "Podemos actualizar esta Política de Cookies de vez en cuando para reflejar cambios en tecnología, legislación o nuestras prácticas comerciales. Le notificaremos cualquier cambio importante publicando la política actualizada en esta página con una fecha de revisión actualizada."
+      "content": "Podemos actualizar esta Política de Cookies de vez en cuando para reflejar cambios en tecnología, legislación o nuestras prácticas comerciales. Le notificaremos cualquier cambio importante publicando la política actualizada en esta página con una fecha de revisión actualizada. Si realizamos cambios significativos, le notificaremos a través de un aviso destacado en nuestro sitio web o por correo electrónico."
     },
     "contact": {
       "title": "Contáctenos",

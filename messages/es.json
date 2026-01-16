@@ -277,6 +277,49 @@
     "privacyPolicy": "Política de Privacidad",
     "cookiePolicy": "Política de Cookies"
   },
+  "cookieConsent": {
+    "banner": {
+      "title": "Valoramos su privacidad",
+      "description": "Utilizamos cookies para mejorar su experiencia. Las cookies esenciales siempre están activas y puede elegir habilitar o deshabilitar otros tipos de cookies.",
+      "acceptAll": "Aceptar Todo",
+      "rejectAll": "Rechazar Todo",
+      "customize": "Personalizar",
+      "learnMore": "Lea nuestra Política de Cookies"
+    },
+    "modal": {
+      "title": "Preferencias de Cookies",
+      "description": "Administre qué cookies desea habilitar. Las cookies esenciales siempre están activas ya que son necesarias para el funcionamiento del sitio web.",
+      "save": "Guardar Preferencias",
+      "withdraw": "Retirar Todo el Consentimiento",
+      "confirmWithdraw": "¿Está seguro de que desea retirar el consentimiento? Esto deshabilitará todas las cookies no esenciales.",
+      "categories": {
+        "essential": {
+          "title": "Cookies Esenciales",
+          "description": "Requeridas para que el sitio web funcione correctamente. Incluyen cookies de preferencia de idioma y seguridad.",
+          "alwaysActive": "Siempre activo"
+        },
+        "functional": {
+          "title": "Cookies Funcionales",
+          "description": "Recuerdan sus preferencias y configuraciones para una experiencia personalizada."
+        },
+        "analytics": {
+          "title": "Cookies de Analítica",
+          "description": "Nos ayudan a mejorar nuestro sitio web mostrándonos las páginas más populares y cómo los visitantes navegan por el sitio."
+        },
+        "marketing": {
+          "title": "Cookies de Marketing",
+          "description": "Habilitan recomendaciones personalizadas y contenido relevante según sus intereses."
+        }
+      }
+    },
+    "footer": {
+      "linkText": "Configuración de Cookies"
+    },
+    "notifications": {
+      "accepted": "Preferencias de cookies guardadas correctamente",
+      "withdrawn": "Consentimiento retirado. Todas las cookies no esenciales han sido deshabilitadas."
+    }
+  },
   "privacyPolicy": {
     "title": "Política de Privacidad",
     "lastUpdated": "Última actualización: Enero 2025",
@@ -388,6 +431,33 @@
         "title": "Presentación de Reclamaciones",
         "content": "Tiene derecho a presentar una reclamación ante su autoridad local de protección de datos."
       }
+    }
+  },
+  "landing": {
+    "socialProof": {
+      "header": "Únete a más de 10.000 personas en todo el mundo que mejoraron su dieta.",
+      "cta": "Obtener Mi Plan Personalizado – €6.99",
+      "testimonials": {
+        "busyParent": {
+          "label": "Padre Ocupado",
+          "quote": "Como madre trabajadora, pedí comidas de 15 minutos con ingredientes normales del supermercado. Obtuve exactamente eso — y perdí 3 kg en las primeras dos semanas sin estrés."
+        },
+        "gymRat": {
+          "label": "Apasionado del Gimnasio",
+          "quote": "Finalmente llegué a 180g de proteína diaria sin pechuga de pollo aburrida en cada comida. El plan realmente sabe bien."
+        },
+        "skeptic": {
+          "label": "Escéptico",
+          "quote": "Pagué €6.99 por capricho pensando que sería basura genérica. Me sorprendió — sabía que odio el pescado y ajustó todo perfectamente."
+        }
+      }
+    },
+    "credibility": {
+      "line1": "Entrenado con más de 50.000 conjuntos de datos de nutrición clínica • Verificado según directrices internacionales",
+      "line2": "No es consejo médico • Solo para fines educativos • © 2026 Dietista IA"
+    },
+    "stickyCTA": {
+      "button": "Obtén Tu Plan - €6.99"
     }
   }
 }

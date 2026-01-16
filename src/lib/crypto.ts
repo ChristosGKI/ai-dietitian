@@ -111,3 +111,48 @@ export function decrypt(encryptedText: string): string {
 export function generateKey(): string {
   return crypto.randomBytes(KEY_LENGTH).toString('hex');
 }
+
+/**
+ * Checks if a value is already encrypted by checking for the encryption format.
+ * Encrypted values have the format `iv:authTag:encryptedContent` (hex encoded).
+ * @param {string} value - The value to check
+ * @returns {boolean} True if the value appears to be encrypted
+ */
+export function isEncrypted(value: string): boolean {
+  if (!value || typeof value !== 'string') {
+    return false;
+  }
+  
+  const parts = value.split(':');
+  if (parts.length !== 3) {
+    return false;
+  }
+  
+  const [ivHex, authTagHex] = parts;
+  
+  // Validate hex format and expected lengths
+  return (
+    /^[a-fA-F0-9]+$/.test(ivHex) &&
+    ivHex.length === IV_LENGTH * 2 &&
+    /^[a-fA-F0-9]+$/.test(authTagHex) &&
+    authTagHex.length === AUTH_TAG_LENGTH * 2
+  );
+}
+
+/**
+ * Safely decrypts a value if it's encrypted, otherwise returns the value as-is.
+ * This is useful for handling backward compatibility with unencrypted data.
+ * @param {string} value - The value to potentially decrypt
+ * @returns {string} The decrypted value if encrypted, or the original value
+ */
+export function safeDecrypt(value: string): string {
+  if (!value || typeof value !== 'string') {
+    return value;
+  }
+  
+  if (isEncrypted(value)) {
+    return decrypt(value);
+  }
+  
+  return value;
+}

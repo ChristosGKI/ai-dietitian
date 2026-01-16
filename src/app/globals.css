@@ -123,3 +123,9 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .premium-bg {
+    background: radial-gradient(ellipse at top right, rgba(236, 253, 245, 0.5) 0%, white 50%, white 100%);
+  }
+}

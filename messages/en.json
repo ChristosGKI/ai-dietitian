@@ -12,7 +12,7 @@
   },
   "wizard": {
     "name": {
-      "aiDietitian": "AI Dietitian Onboarding",
+      "aiDietitian": "New you powered by AI",
       "onboarding": "Onboarding"
     },
     "phases": {
@@ -203,7 +203,7 @@
   },
   "steps": {
     "name": {
-      "question": "What is your name?",
+      "question": "How we should Call you?",
       "placeholder": "Enter your full name"
     },
     "email": {
@@ -276,6 +276,49 @@
     "gdprConsent": "By selecting a language, you consent to the processing of your language preference data. Read our {privacyPolicy} and {cookiePolicy} for more information.",
     "privacyPolicy": "Privacy Policy",
     "cookiePolicy": "Cookie Policy"
+  },
+  "cookieConsent": {
+    "banner": {
+      "title": "We value your privacy",
+      "description": "We use cookies to enhance your experience. Essential cookies are always active, and you can choose to enable or disable other types of cookies.",
+      "acceptAll": "Accept All",
+      "rejectAll": "Reject All",
+      "customize": "Customize",
+      "learnMore": "Read our Cookie Policy"
+    },
+    "modal": {
+      "title": "Cookie Preferences",
+      "description": "Manage which cookies you want to enable. Essential cookies are always active as they are required for the website to function.",
+      "save": "Save Preferences",
+      "withdraw": "Withdraw All Consent",
+      "confirmWithdraw": "Are you sure you want to withdraw consent? This will disable all non-essential cookies.",
+      "categories": {
+        "essential": {
+          "title": "Essential Cookies",
+          "description": "Required for the website to function properly. These include language preference and security cookies.",
+          "alwaysActive": "Always active"
+        },
+        "functional": {
+          "title": "Functional Cookies",
+          "description": "Remember your preferences and settings for a personalized experience."
+        },
+        "analytics": {
+          "title": "Analytics Cookies",
+          "description": "Help us improve our website by showing us which pages are most popular and how visitors move around the site."
+        },
+        "marketing": {
+          "title": "Marketing Cookies",
+          "description": "Enable personalized recommendations and relevant content based on your interests."
+        }
+      }
+    },
+    "footer": {
+      "linkText": "Cookie Settings"
+    },
+    "notifications": {
+      "accepted": "Cookie preferences saved successfully",
+      "withdrawn": "Consent withdrawn. All non-essential cookies have been disabled."
+    }
   },
   "privacyPolicy": {
     "title": "Privacy Policy",
@@ -389,5 +432,113 @@
         "content": "You have the right to lodge a complaint with your local data protection supervisory authority."
       }
     }
+  },
+  "landing": {
+    "urgencyBanner": {
+      "text": "Limited-time price: €6.99 (from €12.99) — Offer ends soon."
+    },
+    "hero": {
+      "h1": "Your Personal Nutritionist. Without the €150 Fee.",
+      "subhead": "Eat exactly what your body needs. Fully personalized 30-day meal plan based on your tastes, budget, and metabolism. Ready in minutes.",
+      "leftCardLabel": "Dietitian Consultation",
+      "leftCardPrice": "€150.00",
+      "rightCardLabel": "Your Custom Plan",
+      "rightCardPrice": "€6.99",
+      "badge": "Save €143!",
+      "cta": "Start My Plan"
+    },
+    "trustBanner": {
+      "items": [
+        "No Monthly Fees",
+        "One-Time Payment",
+        "Yours Forever",
+        "Cancel Anytime (Nothing to Cancel)"
+      ]
+    },
+    "comparison": {
+      "title": "Why Choose Your Custom Plan",
+      "subtitle": "Compare the options and see why thousands choose our AI-powered solution",
+      "headers": ["Human Dietitian", "Generic App", "Your Custom Plan"],
+      "rows": [
+        { "label": "Cost", "values": ["€150", "€15/mo", "€6.99 once"] },
+        { "label": "Time", "values": ["1 Week", "Instant", "Instant"] },
+        { "label": "Privacy", "values": ["Low", "Medium", "100% Faceless"] }
+      ],
+      "footer": "Best value meets clinical precision",
+      "cta": "Best value meets clinical precision"
+    },
+    "showcase": {
+      "title": "Your Perfect Meal Plan, Ready in Minutes",
+      "meals": [
+        "🥞 Protein Pancakes",
+        "🥗 Quinoa Power Bowl",
+        "🥩 Garlic Butter Steak"
+      ],
+      "bullets": [
+        "Exact Macros & Calories tuned to YOUR metabolism and goal weight",
+        "Fully Personalized 7-Day Meal Plan",
+        "Exact Recipes based on your tastes and cooking skills",
+        "Smart Grocery List organized by supermarket aisle"
+      ],
+      "cta": "Generate My Plan"
+    },
+    "socialProof": {
+      "headline": "Join 10,000+ people worldwide who upgraded their diet.",
+      "cta": "Start My Plan",
+      "reviews": [
+        {
+          "author": "Sarah, 34 • Working Mom",
+          "text": "I asked for 15-minute meals with normal ingredients. Got exactly that — and lost 3 kg."
+        },
+        {
+          "author": "Mike, 28 • Gym Rat",
+          "text": "Finally hit 180g protein without boring chicken. The plan actually tastes good."
+        },
+        {
+          "author": "Elena, 41 • Skeptic",
+          "text": "Paid €6.99 on a whim. Shocked it knew I hate fish and adjusted everything."
+        }
+      ]
+    },
+    "footer": {
+      "disclaimer": "Trained on 50,000+ clinical nutrition datasets... Not medical advice.",
+      "line2": "© 2025 AI Dietitian. All rights reserved."
+    },
+    "stickyCTA": {
+      "button": "Get Your Plan - €6.99"
+    },
+    "exitPopup": {
+      "title": "Wait, don't leave yet. You will miss your diet plan for just €6.99.",
+      "body": "In just minutes. Don't miss your transformation.",
+      "primaryBtn": "Continue Transformation",
+      "secondaryBtn": "I prefer generic diets"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "You have questions? We have answers.",
+    "items": [
+      {
+        "q": "How is the AI Dietitian different from a human dietitian?",
+        "a": "The AI Dietitian provides personalized meal plans based on your unique data, offering instant results at a fraction of the cost of traditional dietitians."
+      },
+      {
+        "q": "Is my personal data safe with AI Dietitian?",
+        "a": "Yes, we prioritize your privacy and use advanced security measures to protect your data. We do not share your information with third parties without your consent."
+      },
+      {
+        "q": "Can I customize my meal plan further after receiving it?",
+        "a": "Absolutely! You can adjust your preferences and regenerate your meal plan anytime to better suit your evolving needs."
+      },
+      {
+        "q": "What if I have dietary restrictions or allergies?",
+        "a": "During the onboarding process, you can specify any dietary restrictions or allergies, and the AI will tailor your meal plan accordingly."
+      },
+      {
+        "q": "How often should I update my information for the best results?",
+        "a": "We recommend updating your information every few months or whenever there are significant changes in your lifestyle or health goals."
+      }
+    ]
   }
 }
+

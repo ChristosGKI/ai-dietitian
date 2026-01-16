@@ -1,5 +1,5 @@
 // terms-of-service.tsx
-import LegalPageLanguageSwitcher from '@/components/LegalPageLanguageSwitcher';
+import LegalPageLanguageSwitcher from '@/components/LanguageSwitcher';
 import { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';

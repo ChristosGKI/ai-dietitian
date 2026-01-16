@@ -277,6 +277,49 @@
     "privacyPolicy": "Πολιτική Απορρήτου",
     "cookiePolicy": "Πολιτική Cookies"
   },
+  "cookieConsent": {
+    "banner": {
+      "title": "Εκτιμούμε το απόρρητό σας",
+      "description": "Χρησιμοποιούμε cookies για να βελτιώσουμε την εμπειρία σας. Τα απαραίτητα cookies είναι πάντα ενεργά και μπορείτε να επιλέξετε να ενεργοποιήσετε ή να απενεργοποιήσετε άλλους τύπους.",
+      "acceptAll": "Αποδοχή Όλων",
+      "rejectAll": "Απόρριψη Όλων",
+      "customize": "Προσαρμογή",
+      "learnMore": "Διαβάστε την Πολιτική Cookies"
+    },
+    "modal": {
+      "title": "Προτιμήσεις Cookies",
+      "description": "Διαχειριστείτε ποια cookies θέλετε να ενεργοποιήσετε. Τα απαραίτητα cookies είναι πάντα ενεργά καθώς απαιτούνται για τη λειτουργία του ιστότοπου.",
+      "save": "Αποθήκευση Προτιμήσεων",
+      "withdraw": "Ανάκληση Όλων των Συναινέσεων",
+      "confirmWithdraw": "Είστε σίγουροι ότι θέλετε να ανακαλέσετε τη συναίνεση; Αυτό θα απενεργοποιήσει όλα τα μη απαραίτητα cookies.",
+      "categories": {
+        "essential": {
+          "title": "Απαραίτητα Cookies",
+          "description": "Απαιτούνται για τη σωστή λειτουργία του ιστότοπου. Περιλαμβάνουν cookies προτίμησης γλώσσας και ασφάλειας.",
+          "alwaysActive": "Πάντα ενεργό"
+        },
+        "functional": {
+          "title": "Λειτουργικά Cookies",
+          "description": "Θυμούνται τις προτιμήσεις και ρυθμίσεις σας για μια εξατομικευμένη εμπειρία."
+        },
+        "analytics": {
+          "title": "Αναλυτικά Cookies",
+          "description": "Μας βοηθούν να βελτιώσουμε τον ιστότοπό μας δείχνοντάς μας τις πιο δημοφιλείς σελίδες και πώς οι επισκέπτες περιηγούνται στον ιστότοπο."
+        },
+        "marketing": {
+          "title": "Cookies Μάρκετινγκ",
+          "description": "Ενεργοποιούν εξατομικευμένες συστάσεις και σχετικό περιεχόμενο με βάση τα ενδιαφέροντά σας."
+        }
+      }
+    },
+    "footer": {
+      "linkText": "Ρυθμίσεις Cookies"
+    },
+    "notifications": {
+      "accepted": "Οι προτιμήσεις cookies αποθηκεύτηκαν επιτυχώς",
+      "withdrawn": "Η συναίνεση ανακλήθηκε. Όλα τα μη απαραίτητα cookies έχουν απενεργοποιηθεί."
+    }
+  },
   "privacyPolicy": {
     "title": "Πολιτική Απορρήτου",
     "lastUpdated": "Τελευταία ενημέρωση: Ιανουάριος 2025",
@@ -389,5 +432,58 @@
         "content": "Έχετε το δικαίωμα να υποβάλετε καταγγελία στην τοπική αρχή προστασίας δεδομένων σας."
       }
     }
+  },
+  "landing": {
+    "socialProof": {
+      "header": "Ελάτε πάνω από 10.000 άνθρωποι παγκοσμίως που αναβάθμισαν τη διατροφή τους.",
+      "cta": "Πάρε το Εξατομικευμένο μου Πλάνο – €6.99",
+      "testimonials": {
+        "busyParent": {
+          "label": "Απασχολημένος Γονέας",
+          "quote": "Σαν εργαζόμενη μαμά, ζήτησα γεύματα 15 λεπτών με υλικά από σούπερ μάρκετ. Πήρα ακριβώς αυτό — και έχασα 3 κιλά στις πρώτες δύο εβδομάδες χωρίς άγχος."
+        },
+        "gymRat": {
+          "label": "Λάτρης του Γυμναστηρίου",
+          "quote": "Τέλειωσα επιτέλους 180g πρωτεΐνης ημερησίως χωρίς βαρετό στήθος κοτόπουλο κάθε γεύμα. Το πλάνο είναι πραγματικά νόστιμο."
+        },
+        "skeptic": {
+          "label": "Σκεπτικιστής",
+          "quote": "Πλήρωσα €6.99 σαν πείραμα νομίζοντας ότι θα ήταν γενικής χρήσης σκουπίδια. Εκπλήχθηκα — ήξερε ότι μισώ το ψάρι και προσάρμοσε τα πάντα τέλεια."
+        }
+      }
+    },
+    "credibility": {
+      "line1": "Εκπαιδευμένο σε 50.000+ κλινικά σύνολα δεδομένων διατροφής • Επαληθευμένο σύμφωνα με διεθνείς οδηγίες",
+      "line2": "Δεν αποτελεί ιατρική συμβουλή • Μόνο για εκπαιδευτικούς σκοπούς • © 2026 AI Διαιτολόγος"
+    },
+    "stickyCTA": {
+      "button": "Πάρε το Πλάνο σου - €6.99"
+    }
+  },
+    "faq": {
+    "title": "Συχνές Ερωτήσεις",
+    "subtitle": "Έχετε ερωτήσεις; Έχουμε απαντήσεις.",
+    "items": [
+      {
+        "q": "Πώς διαφέρει ο AI Διαιτολόγος από έναν ανθρώπινο διαιτολόγο;",
+        "a": "Ο AI Διαιτολόγος παρέχει προσαρμοσμένα πλάνα γεύματος βάσει των μοναδικών σας δεδομένων, προσφέροντας άμεσα αποτελέσματα σε μία πρόθεση του κόστους των παραδοσιακών διαιτολόγων."
+      },
+      {
+        "q": "Πόσο ακριβής είναι το διατροφικό πλάνο που δημιουργείται από το AI;",
+        "a": "Yes, we prioritize your privacy and use advanced security measures to protect your data. We do not share your information with third parties without your consent."
+      },
+      {
+        "q": "Can I customize my meal plan further after receiving it?",
+        "a": "Absolutely! You can adjust your preferences and regenerate your meal plan anytime to better suit your evolving needs."
+      },
+      {
+        "q": "What if I have dietary restrictions or allergies?",
+        "a": "During the onboarding process, you can specify any dietary restrictions or allergies, and the AI will tailor your meal plan accordingly."
+      },
+      {
+        "q": "How often should I update my information for the best results?",
+        "a": "We recommend updating your information every few months or whenever there are significant changes in your lifestyle or health goals."
+      }
+    ]
   }
 }

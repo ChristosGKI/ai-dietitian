@@ -3,9 +3,11 @@ import type { NextRequest } from 'next/server';
 import { routing } from './i18n/routing';
 
 // Routes that require legal acceptance to access
+// NOTE: Protection is handled by LanguageSelectorWrapper which shows on all pages
+// until legal_accepted cookie is set. The middleware no longer blocks access.
 const PROTECTED_ROUTES = ['/onboarding', '/payment'];
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
   
   // Check if this is a locale-prefixed path
@@ -38,20 +40,14 @@ export function middleware(request: NextRequest) {
                       pathname.includes('/terms-of-service') ||
                       pathname.includes('/legal');
   
-  // Check if we're accessing a protected route
-  const isProtectedRoute = PROTECTED_ROUTES.some(route => pathname.includes(route));
+  // NOTE: Legal acceptance check has been moved to client-side (LanguageSelectorWrapper)
+  // The language selector shows on all non-legal pages until user accepts
+  // This allows navigation to protected routes so users can accept on those pages
   
-  // Check legal acceptance cookie value
+  // Check legal acceptance for locale cookie setting
   // Cookie is set when user selects language from the selector
   const legalAccepted = request.cookies.get('legal_accepted')?.value;
   const hasLegalAcceptance = legalAccepted !== undefined && legalAccepted !== '';
-  
-  // Redirect to root if accessing protected route without legal acceptance
-  if (isProtectedRoute && !hasLegalAcceptance) {
-    return NextResponse.redirect(
-      new URL(`/${locale}`, request.url)
-    );
-  }
   
   // Create response for locale-prefixed paths
   const response = NextResponse.next();

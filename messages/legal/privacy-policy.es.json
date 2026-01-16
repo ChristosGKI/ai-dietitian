@@ -2,30 +2,70 @@
   "privacyPolicy": {
     "title": "Política de Privacidad",
     "lastUpdated": "Última actualización: enero de 2025",
-    "intro": "AI Dietitian se compromete a proteger su privacidad. Esta política explica cómo recopilamos, utilizamos y salvaguardamos su información.",
+    "intro": "AI Dietitian se compromete a proteger su privacidad. Esta política explica cómo recopilamos, utilizamos y salvaguardamos su información en cumplimiento con los requisitos del RGPD.",
     "dataCollection": {
       "title": "Información que Recopilamos",
-      "content": "Recopilamos la información que usted proporciona directamente, incluidos datos personales, información de salud y preferencias dietéticas."
+      "content": "Recopilamos la información que usted proporciona directamente, incluidos datos personales, información de salud y preferencias dietéticas. También recopilamos cierta información automáticamente cuando utiliza nuestros servicios, incluyendo su dirección IP, tipo de navegador y datos de uso."
     },
     "dataUsage": {
       "title": "Cómo Utilizamos su Información",
-      "content": "Sus datos se utilizan para proporcionar recomendaciones dietéticas personalizadas, mejorar nuestros servicios y comunicarnos con usted."
+      "content": "Sus datos se utilizan para proporcionar recomendaciones dietéticas personalizadas, mejorar nuestros servicios y comunicarnos con usted. También podemos usar sus datos con fines de análisis para mejorar la experiencia del usuario y la calidad del servicio."
     },
     "userRights": {
       "title": "Sus Derechos",
-      "content": "Bajo el RGPD, tiene derecho a acceder, rectificar, borrar, restringir el tratamiento y portar sus datos."
+      "content": "Bajo el RGPD, tiene derecho a acceder, rectificar, borrar, restringir el tratamiento y portar sus datos. También tiene derecho a retirar su consentimiento en cualquier momento.",
+      "access": "Acceso: Puede solicitar una copia de todos los datos personales que tenemos sobre usted.",
+      "rectification": "Rectificación: Puede solicitar la corrección de datos inexactos o incompletos.",
+      "erasure": "Borrado: Puede solicitar la eliminación de sus datos personales en determinadas circunstancias.",
+      "restrict": "Restringir Tratamiento: Puede solicitarnos que limitemos cómo usamos sus datos.",
+      "portability": "Portabilidad de Datos: Puede solicitar una copia legible por máquina de sus datos.",
+      "withdrawConsent": "Retirar Consentimiento: Puede retirar su consentimiento para el tratamiento de datos en cualquier momento."
     },
     "dataProtection": {
       "title": "Protección de Datos",
-      "content": "Implementamos medidas técnicas y organizativas apropiadas para proteger sus datos personales."
+      "content": "Implementamos medidas técnicas y organizativas apropiadas para proteger sus datos personales. Esto incluye encriptación, controles de acceso y evaluaciones de seguridad periódicas."
     },
     "dataSharing": {
       "title": "Compartición de Datos",
-      "content": "No vendemos sus datos. Podemos compartirlos con proveedores de servicios que nos ayudan a operar nuestra plataforma."
+      "content": "No vendemos sus datos. Podemos compartirlos con proveedores de servicios que nos ayudan a operar nuestra plataforma. Todos los procesadores de terceros están vinculados por estrictos acuerdos de protección de datos.",
+      "serviceProviders": "Proveedores de Servicios: Trabajamos con terceros de confianza para hosting, procesamiento de pagos, análisis y otros servicios operativos.",
+      "legalRequirements": "Requisitos Legales: Podemos divulgar sus datos si la ley lo requiere o para proteger nuestros derechos legales."
+    },
+    "cookieConsent": {
+      "title": "Consentimiento de Cookies",
+      "intro": "Respetamos su derecho a la privacidad y cumplimos con los requisitos del RGPD para el consentimiento de cookies.",
+      "explicitConsent": {
+        "title": "Consentimiento Explícito Requerido",
+        "content": "Las cookies no esenciales (funcionales, analíticas y de marketing) solo se establecen después de proporcionar su consentimiento explícito a través de nuestro banner de consentimiento de cookies. Las cookies esenciales siempre están activas ya que son necesarias para el funcionamiento del sitio web."
+      },
+      "granularControl": {
+        "title": "Control Granular",
+        "content": "Puede elegir qué tipos de cookies aceptar. Las cookies esenciales siempre están activas ya que son necesarias para el funcionamiento del sitio web. Para otras categorías, puede activar o desactivar cada una según sus preferencias."
+      },
+      "withdrawal": {
+        "title": "Retirar el Consentimiento",
+        "content": "Puede retirar su consentimiento en cualquier momento utilizando el enlace 'Configuración de Cookies' en nuestro pie de página o contáctenos. La retirada surte efecto inmediatamente y dejaremos de establecer cookies no esenciales a partir de ese momento.",
+        "process": "Para retirar el consentimiento, haga clic en 'Configuración de Cookies' en el pie de página y luego haga clic en 'Retirar Todo el Consentimiento'. Esto deshabilitará inmediatamente todas las cookies no esenciales."
+      },
+      "recordKeeping": {
+        "title": "Registros de Consentimiento",
+        "content": "Mantenemos registros de sus elecciones de consentimiento, incluyendo la marca de tiempo, las categorías consentidas y la versión de nuestra política de consentimiento. Estos registros se conservan durante 12 meses para demostrar el cumplimiento con los requisitos del RGPD.",
+        "whatWeRecord": "Registramos: cuándo dio su consentimiento, qué categorías aceptó o rechazó, y la fuente de su consentimiento (banner o modal de preferencias)."
+      },
+      "thirdPartySharing": {
+        "title": "Compartición de Datos con Terceros",
+        "content": "Cuando consiente en cookies analíticas, podemos compartir datos con proveedores de análisis como Google Analytics. Cuando consiente en cookies de marketing, podemos compartir datos con proveedores de marketing como Facebook Pixel.",
+        "analyticsProviders": "Proveedores de Análisis: Google Analytics (para análisis del rendimiento del sitio web)",
+        "marketingProviders": "Proveedores de Marketing: Facebook Pixel (para personalización de publicidad)",
+        "paymentProviders": "Proveedores de Pagos: Stripe (para procesamiento de pagos - necesario para transacciones)"
+      }
     },
     "contact": {
       "title": "Contáctenos",
-      "content": "Para consultas sobre privacidad, por favor contáctenos a través de nuestros canales de soporte."
+      "content": "Para consultas sobre privacidad, por favor contáctenos a través de nuestros canales de soporte.",
+      "email": "Correo electrónico: privacy@aidietitian.com",
+      "dpo": "Delegado de Protección de Datos: dpo@aidietitian.com",
+      "address": "Dirección: [Dirección de la Empresa]"
     }
   }
 }

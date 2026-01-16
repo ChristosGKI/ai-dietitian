@@ -3,6 +3,7 @@
 import { usePathname } from '@/i18n/routing';
 import dynamic from 'next/dynamic';
 import { useEffect, useState } from 'react';
+import { useCookieConsent } from '@/hooks/useCookieConsent';
 
 const LanguageSelector = dynamic(
   () => import('./LanguageSelectorPopup').then((mod) => mod.LanguageSelector),
@@ -17,6 +18,7 @@ function isLegalPage(pathname: string): boolean {
 export function LanguageSelectorWrapper() {
   const pathname = usePathname();
   const [mounted, setMounted] = useState(false);
+  const hasCookieConsent = useCookieConsent();
   
   // Wait for mount to avoid hydration issues
   useEffect(() => {
@@ -25,7 +27,7 @@ export function LanguageSelectorWrapper() {
   
   // Show language selector on all pages except legal pages
   // On legal pages, use LegalPageLanguageSwitcher instead
-  if (!mounted || isLegalPage(pathname)) {
+  if (!mounted || isLegalPage(pathname) || hasCookieConsent) {
     return null;
   }
   

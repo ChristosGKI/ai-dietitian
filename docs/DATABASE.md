@@ -11,7 +11,7 @@ The database schema is defined in [`prisma/schema.prisma`](../prisma/schema.pris
 ```prisma
 model User {
   id               String     @id @default(cuid())
-  email            String     @unique
+  email            String     @unique // AES-256-GCM encrypted (GDPR Article 32)
   name             String?    // Encrypted with AES-256-GCM
   kitchenHabits    Json?
   dietaryPrefs     Json?
@@ -40,7 +40,7 @@ enum UserStatus {
 | Field | Type | Unique | Optional | Description |
 |-------|------|--------|----------|-------------|
 | `id` | String | Yes | No | Unique identifier (Prisma cuid) |
-| `email` | String | Yes | No | User's email address (unique) |
+| `email` | String | Yes | No | User's email address (AES-256-GCM encrypted, GDPR Article 32) |
 | `name` | String | No | Yes | User's full name (AES-256-GCM encrypted) |
 | `createdAt` | DateTime | No | No | Record creation timestamp |
 | `updatedAt` | DateTime | No | No | Last update timestamp |
@@ -183,11 +183,13 @@ The Prisma client manages connection pooling automatically. Key settings:
 
 ## Migrations
 
-The current schema reflects the `professional_diet_schema` migration (20260113082200).
+The current schema reflects the `simplify_email_schema` migration (20260114112306).
 
 | Migration | Description |
 |-----------|-------------|
 | `20260113082200_professional_diet_schema` | Adds JSON fields for structured diet data and UserStatus enum |
+| `20260114111654_email_encryption` | Initial email encryption with dual-column approach |
+| `20260114112306_simplify_email_schema` | Simplifies to single encrypted email column |
 
 Database migrations are handled by Prisma Migrate:
 
@@ -227,6 +229,12 @@ npx prisma migrate reset
                                │
                                ▼
                     ┌─────────────────────┐
+                    │   PII Encryption    │
+                    │   (email, name)     │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
                     │   Prisma Upsert     │
                     └──────────┬──────────┘
                                │
@@ -235,6 +243,52 @@ npx prisma migrate reset
                     │   PostgreSQL DB     │
                     │   (User Table)      │
                     └─────────────────────┘
+```
+
+## Email Encryption Pattern
+
+The application implements a single-column approach for email storage to ensure GDPR compliance:
+
+### Write Pattern
+
+```typescript
+// Encrypt email before storage
+const encryptedEmail = encrypt(email);
+
+// Upsert with encrypted email
+await prisma.user.upsert({
+  where: { email: encryptedEmail },
+  create: {
+    email: encryptedEmail,
+    // ... other fields
+  },
+  update: {
+    email: encryptedEmail,
+    // ... other fields
+  },
+});
+```
+
+### Read Pattern
+
+```typescript
+// Find user and decrypt email
+const user = await prisma.user.findUnique({
+  where: { id: userId },
+});
+
+const email = decrypt(user.email);
+```
+
+### Query Considerations
+
+Since emails are encrypted, direct email-based lookups require encrypting the search term:
+
+```typescript
+const encryptedEmail = encrypt(searchEmail);
+const user = await prisma.user.findUnique({
+  where: { email: encryptedEmail },
+});
 ```
 
 ## Best Practices

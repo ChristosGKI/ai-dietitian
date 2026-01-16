@@ -2,30 +2,70 @@
   "privacyPolicy": {
     "title": "Privacy Policy",
     "lastUpdated": "Last updated: January 2025",
-    "intro": "AI Dietitian is committed to protecting your privacy. This policy explains how we collect, use, and safeguard your information.",
+    "intro": "AI Dietitian is committed to protecting your privacy. This policy explains how we collect, use, and safeguard your information in compliance with GDPR requirements.",
     "dataCollection": {
       "title": "Information We Collect",
-      "content": "We collect information you provide directly, including personal details, health information, and dietary preferences."
+      "content": "We collect information you provide directly, including personal details, health information, and dietary preferences. We also collect certain information automatically when you use our services, including your IP address, browser type, and usage data."
     },
     "dataUsage": {
       "title": "How We Use Your Information",
-      "content": "Your data is used to provide personalized diet recommendations, improve our services, and communicate with you."
+      "content": "Your data is used to provide personalized diet recommendations, improve our services, and communicate with you. We may also use your data for analytics purposes to enhance user experience and service quality."
     },
     "userRights": {
       "title": "Your Rights",
-      "content": "Under GDPR, you have the right to access, rectify, erase, restrict processing, and port your data."
+      "content": "Under GDPR, you have the right to access, rectify, erase, restrict processing, and port your data. You also have the right to withdraw consent at any time.",
+      "access": "Access: You can request a copy of all personal data we hold about you.",
+      "rectification": "Rectification: You can request correction of inaccurate or incomplete data.",
+      "erasure": "Erasure: You can request deletion of your personal data in certain circumstances.",
+      "restrict": "Restrict Processing: You can request that we limit how we use your data.",
+      "portability": "Data Portability: You can request a machine-readable copy of your data.",
+      "withdrawConsent": "Withdraw Consent: You can withdraw your consent for data processing at any time."
     },
     "dataProtection": {
       "title": "Data Protection",
-      "content": "We implement appropriate technical and organizational measures to protect your personal data."
+      "content": "We implement appropriate technical and organizational measures to protect your personal data. This includes encryption, access controls, and regular security assessments."
     },
     "dataSharing": {
       "title": "Data Sharing",
-      "content": "We do not sell your data. We may share it with service providers who help us operate our platform."
+      "content": "We do not sell your data. We may share it with service providers who help us operate our platform. All third-party processors are bound by strict data protection agreements.",
+      "serviceProviders": "Service Providers: We work with trusted third parties for hosting, payment processing, analytics, and other operational services.",
+      "legalRequirements": "Legal Requirements: We may disclose your data if required by law or to protect our legal rights."
+    },
+    "cookieConsent": {
+      "title": "Cookie Consent",
+      "intro": "We respect your right to privacy and comply with GDPR requirements for cookie consent.",
+      "explicitConsent": {
+        "title": "Explicit Consent Required",
+        "content": "Non-essential cookies (functional, analytics, and marketing) are only set after you provide explicit consent through our cookie consent banner. Essential cookies are always active as they are necessary for the website to function."
+      },
+      "granularControl": {
+        "title": "Granular Control",
+        "content": "You can choose which types of cookies to accept. Essential cookies are always active as they are necessary for the website to function. For other categories, you can toggle each one on or off according to your preferences."
+      },
+      "withdrawal": {
+        "title": "Withdrawing Consent",
+        "content": "You may withdraw your consent at any time by using the 'Cookie Settings' link in our footer or by contacting us. Withdrawal takes effect immediately, and we will stop setting non-essential cookies from that point forward.",
+        "process": "To withdraw consent, click 'Cookie Settings' in the footer, then click 'Withdraw All Consent'. This will immediately disable all non-essential cookies."
+      },
+      "recordKeeping": {
+        "title": "Consent Records",
+        "content": "We maintain records of your consent choices, including the timestamp, categories consented to, and version of our consent policy. These records are retained for 12 months to demonstrate compliance with GDPR requirements.",
+        "whatWeRecord": "We record: when you gave consent, what categories you accepted or rejected, and the source of your consent (banner or preferences modal)."
+      },
+      "thirdPartySharing": {
+        "title": "Data Sharing with Third Parties",
+        "content": "When you consent to analytics cookies, we may share data with analytics providers such as Google Analytics. When you consent to marketing cookies, we may share data with marketing providers such as Facebook Pixel.",
+        "analyticsProviders": "Analytics Providers: Google Analytics (for website performance analysis)",
+        "marketingProviders": "Marketing Providers: Facebook Pixel (for advertising personalization)",
+        "paymentProviders": "Payment Providers: Stripe (for payment processing - necessary for transactions)"
+      }
     },
     "contact": {
       "title": "Contact Us",
-      "content": "For privacy inquiries, please contact us through our support channels."
+      "content": "For privacy inquiries, please contact us through our support channels.",
+      "email": "Email: privacy@aidietitian.com",
+      "dpo": "Data Protection Officer: dpo@aidietitian.com",
+      "address": "Address: [Company Address]"
     }
   }
 }

@@ -27,80 +27,11 @@ const languages: LanguageOption[] = [
   { code: 'el', name: 'Greek', nativeName: 'Ελληνικά', flag: '🇬🇷' },
 ];
 
-// European time zones for GDPR detection
-const euTimezones = [
-  'Europe/Amsterdam',
-  'Europe/Andorra',
-  'Europe/Athens',
-  'Europe/Belgrade',
-  'Europe/Berlin',
-  'Europe/Bratislava',
-  'Europe/Brussels',
-  'Europe/Bucharest',
-  'Europe/Budapest',
-  'Europe/Chisinau',
-  'Europe/Copenhagen',
-  'Europe/Dublin',
-  'Europe/Gibraltar',
-  'Europe/Guernsey',
-  'Europe/Helsinki',
-  'Europe/Isle_of_Man',
-  'Europe/Istanbul',
-  'Europe/Jersey',
-  'Europe/Kaliningrad',
-  'Europe/Kiev',
-  'Europe/Lisbon',
-  'Europe/Ljubljana',
-  'Europe/London',
-  'Europe/Luxembourg',
-  'Europe/Madrid',
-  'Europe/Malta',
-  'Europe/Mariehamn',
-  'Europe/Minsk',
-  'Europe/Monaco',
-  'Europe/Moscow',
-  'Europe/Nicosia',
-  'Europe/Oslo',
-  'Europe/Paris',
-  'Europe/Podgorica',
-  'Europe/Prague',
-  'Europe/Riga',
-  'Europe/Rome',
-  'Europe/San_Marino',
-  'Europe/Sarajevo',
-  'Europe/Simferopol',
-  'Europe/Skopje',
-  'Europe/Sofia',
-  'Europe/Stockholm',
-  'Europe/Tallinn',
-  'Europe/Tirane',
-  'Europe/Tiraspol',
-  'Europe/Uzhgorod',
-  'Europe/Vaduz',
-  'Europe/Vatican',
-  'Europe/Vienna',
-  'Europe/Vilnius',
-  'Europe/Warsaw',
-  'Europe/Zagreb',
-  'Europe/Zaporozhye',
-  'Europe/Zurich',
-];
-
-function isInEU(): boolean {
-  try {
-    const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-    return euTimezones.includes(timezone);
-  } catch {
-    return false;
-  }
-}
-
 export function LanguageSelector() {
-  const hasAccepted = useHasLegalAcceptance();
+  const hasLegalAcceptance = useHasLegalAcceptance();
   const router = useRouter();
   const pathname = usePathname();
   const [isVisible, setIsVisible] = useState(false);
-  const [showGdpr, setShowGdpr] = useState(false);
   const [currentLocale, setCurrentLocale] = useState<Locale>('en');
 
   useEffect(() => {
@@ -110,37 +41,38 @@ export function LanguageSelector() {
       setCurrentLocale(match[1] as Locale);
     }
 
-    if (!hasAccepted) {
+    if (!hasLegalAcceptance) {
       // Show modal after a short delay for smooth UX
       const timer = setTimeout(() => {
         setIsVisible(true);
-        // Check if we should show GDPR consent (EU users)
-        setShowGdpr(isInEU());
       }, 500);
+      
       return () => clearTimeout(timer);
     }
-  }, [hasAccepted]);
+  }, [hasLegalAcceptance]);
 
   const handleLanguageSelect = (locale: Locale) => {
-    // Set locale cookie with legal acceptance timestamp
+    // Set locale cookie only (cookie consent is handled separately)
     const expiryDate = new Date();
     expiryDate.setFullYear(expiryDate.getFullYear() + 1); // 1 year expiry
     
-    document.cookie = `NEXT_LOCALE=${locale}; path=/; expires=${expiryDate.toUTCString()}; SameSite=Lax`;
+    document.cookie = `NEXT_LOCALE=${locale}; path=/; expires=${expiryDate.toUTCString()}; SameSite=Lax; Secure`;
     
-    // Set legal acceptance cookie
-    const acceptanceDate = new Date().toISOString();
-    document.cookie = `legal_accepted=${acceptanceDate}; path=/; expires=${expiryDate.toUTCString()}; SameSite=Lax`;
+    // Set legal acceptance cookie so user can access protected routes
+    document.cookie = `legal_accepted=true; path=/; expires=${expiryDate.toUTCString()}; SameSite=Lax; Secure`;
     
     // Close the modal first
     setIsVisible(false);
     
+    // Strip the locale prefix from pathname to avoid duplicate locales
+    const cleanPathname = pathname.replace(/^\/[^/]+\//, '/');
+    
     // Force a hard reload to the new locale to ensure all data is fresh
-    window.location.href = `/${locale}${pathname}`;
+    window.location.href = `/${locale}${cleanPathname}`;
   };
 
-  // Don't show if user has already accepted
-  if (hasAccepted) {
+  // Don't show if user has already accepted legal terms
+  if (hasLegalAcceptance) {
     return null;
   }
 
@@ -163,7 +95,6 @@ export function LanguageSelector() {
           {languages.map((lang) => (
             <Button
               key={lang.code}
-              // variant={lang.code === currentLocale ? "default" : "outline"}
               variant="outline"
               className="w-full justify-start gap-3 h-12 text-base"
               onClick={() => handleLanguageSelect(lang.code)}
@@ -176,48 +107,6 @@ export function LanguageSelector() {
             </Button>
           ))}
         </CardContent>
-        <div className="px-6 pb-6">
-          <p className="text-xs text-muted-foreground text-center leading-relaxed">
-            By selecting a language, you accept our{' '}
-            <a
-              href={`/${currentLocale}/privacy-policy`}
-              rel="noopener noreferrer"
-              className="underline hover:text-primary transition-colors"
-            >
-              Privacy Policy
-            </a>
-            {', '}
-            <a
-              href={`/${currentLocale}/cookie-policy`}
-              rel="noopener noreferrer"
-              className="underline hover:text-primary transition-colors"
-            >
-              Cookie Policy
-            </a>
-            {showGdpr && ', '}
-            {showGdpr && (
-              <a
-                href={`/${currentLocale}/terms-of-service`}
-                rel="noopener noreferrer"
-                className="underline hover:text-primary transition-colors"
-              >
-                Terms of Service
-              </a>
-            )}
-            {showGdpr && ', '}
-            {showGdpr && (
-              <a
-                href={`/${currentLocale}/data-protection`}
-                rel="noopener noreferrer"
-                className="underline hover:text-primary transition-colors"
-              >
-                Data Protection
-              </a>
-            )}
-            {showGdpr && ' and consent to the processing of your language preference data'}
-            .
-          </p>
-        </div>
       </Card>
     </div>
   );

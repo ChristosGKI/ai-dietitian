@@ -36,14 +36,12 @@ export interface DecryptedUserData {
 // Type for user from Prisma (after schema update)
 type PrismaUser = {
   id: string;
-  email: string;
+  email: string; // Encrypted email
   name: string | null;
-  age: string | null;
-  weight: string | null;
-  height: string | null;
-  gender: string | null;
-  goals: string | null;
-  allergies: string | null;
+  kitchenHabits: unknown | null;
+  dietaryPrefs: unknown | null;
+  activityProfile: unknown | null;
+  lifestyleProfile: unknown | null;
   status: 'STARTED' | 'PAID' | 'COMPLETED';
   createdAt: Date;
   updatedAt: Date;
@@ -92,18 +90,13 @@ function encryptUserData(data: UserUpdateData): Record<string, string | undefine
 
 /**
  * Decrypts user data from database format to readable format.
+ * Decrypts the email field since it's stored encrypted.
  */
 function decryptUserData(user: PrismaUser): DecryptedUserData {
   return {
     id: user.id,
-    email: user.email,
+    email: decrypt(user.email), // Email is stored encrypted
     name: user.name ? decrypt(user.name) : undefined,
-    age: user.age ? parseInt(decrypt(user.age), 10) : undefined,
-    weight: user.weight ? parseFloat(decrypt(user.weight)) : undefined,
-    height: user.height ? parseFloat(decrypt(user.height)) : undefined,
-    gender: user.gender || undefined,
-    goals: user.goals ? decrypt(user.goals) : undefined,
-    allergies: user.allergies ? decrypt(user.allergies) : undefined,
     status: user.status,
     createdAt: user.createdAt,
     updatedAt: user.updatedAt,
@@ -143,13 +136,16 @@ export async function saveProgress(
 
     const validatedData = validationResult.data as UserUpdateData;
 
+    // Encrypt email for storage (the email field stores encrypted values)
+    const encryptedEmail = validatedData.email ? encrypt(validatedData.email as string) : undefined;
+
     // Build the where clause and data for upsert
     let whereClause: { id: string } | { email: string };
     
     if (userId) {
       whereClause = { id: userId };
-    } else if (validatedData.email) {
-      whereClause = { email: validatedData.email as string };
+    } else if (encryptedEmail) {
+      whereClause = { email: encryptedEmail };
     } else {
       return {
         success: false,
@@ -165,18 +161,16 @@ export async function saveProgress(
       where: whereClause,
       update: {
         ...encryptedData,
-        // Ensure email is preserved on update if not provided in data
-        email: validatedData.email || undefined,
+        // Email is stored encrypted
+        email: encryptedEmail,
       },
       create: {
-        email: validatedData.email || '',
+        email: encryptedEmail || '',
         name: encryptedData.name,
-        age: encryptedData.age,
-        weight: encryptedData.weight,
-        height: encryptedData.height,
-        gender: encryptedData.gender,
-        goals: encryptedData.goals,
-        allergies: encryptedData.allergies,
+        kitchenHabits: validatedData.kitchenHabits,
+        dietaryPrefs: validatedData.dietaryPrefs,
+        activityProfile: validatedData.activityProfile,
+        lifestyleProfile: validatedData.lifestyleProfile,
       },
     });
 
@@ -221,8 +215,10 @@ export async function getUser(userId: string): Promise<GetUserResult> {
 
 export async function getUserByEmail(email: string): Promise<GetUserResult> {
   try {
+    // Encrypt the email before searching (since email field stores encrypted values)
+    const encryptedEmail = encrypt(email);
     const user = await prisma.user.findUnique({
-      where: { email },
+      where: { email: encryptedEmail },
     });
 
     if (!user) {

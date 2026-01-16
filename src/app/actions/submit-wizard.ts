@@ -1,6 +1,6 @@
 'use server';
 
-import { encrypt } from '@/lib/crypto';
+import { decrypt, encrypt, safeDecrypt } from '@/lib/crypto';
 import { prisma } from '@/lib/prisma';
 import { mapWizardToUser } from '@/lib/wizard-mapper';
 import type { WizardState } from '@/types/wizard';
@@ -50,14 +50,15 @@ export async function submitWizardAction(answers: WizardState): Promise<SubmitWi
     // Map wizard answers to user data structure
     const userData = mapWizardToUser(answers);
 
-    // Encrypt the name (PII protection)
+    // Encrypt PII (name and email for GDPR Article 32 compliance)
     const encryptedName = encrypt(name);
+    const encryptedEmail = encrypt(email);
 
     // Upsert user record
     const user = await prisma.user.upsert({
-      where: { email },
+      where: { email: encryptedEmail },
       create: {
-        email,
+        email: encryptedEmail,
         name: encryptedName,
         status: 'STARTED',
         kitchenHabits: userData.kitchenHabits,

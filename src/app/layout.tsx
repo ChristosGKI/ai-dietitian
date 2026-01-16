@@ -1,4 +1,5 @@
 import { LanguageSelectorWrapper } from '@/components/LanguageSelectorWrapper';
+import { CookieConsentWrapper } from '@/components/CookieConsentWrapper';
 import { routing } from '@/i18n/routing';
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from 'next-intl';
@@ -49,6 +50,7 @@ export default async function RootLayout({
         <NextIntlClientProvider messages={messages} locale={validLocale}>
           {children}
           <LanguageSelectorWrapper />
+          <CookieConsentWrapper />
         </NextIntlClientProvider>
       </body>
     </html>
