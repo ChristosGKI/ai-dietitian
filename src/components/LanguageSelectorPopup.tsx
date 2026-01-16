@@ -52,23 +52,12 @@ export function LanguageSelector() {
   }, [hasLegalAcceptance]);
 
   const handleLanguageSelect = (locale: Locale) => {
-    // Set locale cookie only (cookie consent is handled separately)
-    const expiryDate = new Date();
-    expiryDate.setFullYear(expiryDate.getFullYear() + 1); // 1 year expiry
-    
-    document.cookie = `NEXT_LOCALE=${locale}; path=/; expires=${expiryDate.toUTCString()}; SameSite=Lax; Secure`;
-    
-    // Set legal acceptance cookie so user can access protected routes
-    document.cookie = `legal_accepted=true; path=/; expires=${expiryDate.toUTCString()}; SameSite=Lax; Secure`;
-    
     // Close the modal first
     setIsVisible(false);
     
-    // Strip the locale prefix from pathname to avoid duplicate locales
-    const cleanPathname = pathname.replace(/^\/[^/]+\//, '/');
-    
-    // Force a hard reload to the new locale to ensure all data is fresh
-    window.location.href = `/${locale}${cleanPathname}`;
+    // Navigate to the new locale
+    // Next-intl will handle the routing automatically
+    router.replace(pathname, { locale });
   };
 
   // Don't show if user has already accepted legal terms

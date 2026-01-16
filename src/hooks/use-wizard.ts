@@ -10,8 +10,6 @@ import { getAllSteps, wizardData } from '@/config/wizard-data';
 import { WizardPhase, WizardState, WizardStep } from '@/types/wizard';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 
-const LOCALSTORAGE_KEY = 'wizard-answers';
-
 /**
  * Check if a value is considered valid (not null, undefined, empty string, or empty array)
  */
@@ -23,23 +21,6 @@ function isValidAnswer(value: unknown): boolean {
 }
 
 /**
- * Initialize answers from LocalStorage
- */
-function initializeAnswers(): WizardState {
-  if (typeof window === 'undefined') return {};
-  
-  try {
-    const stored = localStorage.getItem(LOCALSTORAGE_KEY);
-    if (stored) {
-      return JSON.parse(stored);
-    }
-  } catch {
-    console.warn('Failed to load wizard answers from LocalStorage');
-  }
-  return {};
-}
-
-/**
  * Main wizard hook for managing wizard state and navigation
  */
 export function useWizard() {
@@ -47,20 +28,11 @@ export function useWizard() {
   const [currentPhaseIndex, setCurrentPhaseIndex] = useState(0);
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
   
-  // Wizard answers state
-  const [answers, setAnswers] = useState<WizardState>(() => initializeAnswers());
+  // Wizard answers state - stored in memory only
+  const [answers, setAnswers] = useState<WizardState>({});
   
   // Submission state
   const [isSubmitting, setIsSubmitting] = useState(false);
-
-  // Persist answers to LocalStorage whenever they change
-  useEffect(() => {
-    try {
-      localStorage.setItem(LOCALSTORAGE_KEY, JSON.stringify(answers));
-    } catch {
-      console.warn('Failed to persist wizard answers to LocalStorage');
-    }
-  }, [answers]);
 
   // Compute current phase
   const currentPhase: WizardPhase = useMemo(() => 
@@ -165,9 +137,6 @@ export function useWizard() {
       // TODO: Submit to server
       // const result = await submitWizardToServer(answers);
       
-      // Clear LocalStorage after successful submit
-      localStorage.removeItem(LOCALSTORAGE_KEY);
-      
     } catch (error) {
       console.error('Failed to submit wizard:', error);
     } finally {
@@ -182,7 +151,6 @@ export function useWizard() {
     setCurrentPhaseIndex(0);
     setCurrentStepIndex(0);
     setAnswers({});
-    localStorage.removeItem(LOCALSTORAGE_KEY);
   }, []);
 
   return {

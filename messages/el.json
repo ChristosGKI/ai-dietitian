@@ -434,56 +434,110 @@
     }
   },
   "landing": {
-    "socialProof": {
-      "header": "Ελάτε πάνω από 10.000 άνθρωποι παγκοσμίως που αναβάθμισαν τη διατροφή τους.",
-      "cta": "Πάρε το Εξατομικευμένο μου Πλάνο – €6.99",
-      "testimonials": {
-        "busyParent": {
-          "label": "Απασχολημένος Γονέας",
-          "quote": "Σαν εργαζόμενη μαμά, ζήτησα γεύματα 15 λεπτών με υλικά από σούπερ μάρκετ. Πήρα ακριβώς αυτό — και έχασα 3 κιλά στις πρώτες δύο εβδομάδες χωρίς άγχος."
-        },
-        "gymRat": {
-          "label": "Λάτρης του Γυμναστηρίου",
-          "quote": "Τέλειωσα επιτέλους 180g πρωτεΐνης ημερησίως χωρίς βαρετό στήθος κοτόπουλο κάθε γεύμα. Το πλάνο είναι πραγματικά νόστιμο."
-        },
-        "skeptic": {
-          "label": "Σκεπτικιστής",
-          "quote": "Πλήρωσα €6.99 σαν πείραμα νομίζοντας ότι θα ήταν γενικής χρήσης σκουπίδια. Εκπλήχθηκα — ήξερε ότι μισώ το ψάρι και προσάρμοσε τα πάντα τέλεια."
-        }
-      }
+    "urgencyBanner": {
+      "text": "Μόνο για λίγο 6.99€ (από 13.99€) για το εξατομικευμένο σας διατροφικό πλάνο."
     },
-    "credibility": {
-      "line1": "Εκπαιδευμένο σε 50.000+ κλινικά σύνολα δεδομένων διατροφής • Επαληθευμένο σύμφωνα με διεθνείς οδηγίες",
-      "line2": "Δεν αποτελεί ιατρική συμβουλή • Μόνο για εκπαιδευτικούς σκοπούς • © 2026 AI Διαιτολόγος"
+    "hero": {
+      "h1": "Το Διαιτολόγιό σας, Επαναπροσδιορισμένο από το AI",
+      "subhead": "Eat exactly what your body needs. Fully personalized 30-day meal plan based on your tastes, budget, and metabolism. Ready in minutes.",
+      "leftCardLabel": "Dietitian Consultation",
+      "leftCardPrice": "€150.00",
+      "rightCardLabel": "Your Custom Plan",
+      "rightCardPrice": "€6.99",
+      "badge": "Save €143!",
+      "cta": "Start My Plan"
+    },
+    "trustBanner": {
+      "items": [
+        "No Monthly Fees",
+        "One-Time Payment",
+        "Yours Forever",
+        "Cancel Anytime (Nothing to Cancel)"
+      ]
+    },
+    "comparison": {
+      "title": "Why Choose Your Custom Plan",
+      "subtitle": "Compare the options and see why thousands choose our AI-powered solution",
+      "headers": ["Human Dietitian", "Generic App", "Your Custom Plan"],
+      "rows": [
+        { "label": "Cost", "values": ["€150", "€15/mo", "€6.99 once"] },
+        { "label": "Time", "values": ["1 Week", "Instant", "Instant"] },
+        { "label": "Privacy", "values": ["Low", "Medium", "100% Faceless"] }
+      ],
+      "footer": "Best value meets clinical precision",
+      "cta": "Best value meets clinical precision"
+    },
+    "showcase": {
+      "title": "Your Perfect Meal Plan, Ready in Minutes",
+      "meals": [
+        "🥞 Protein Pancakes",
+        "🥗 Quinoa Power Bowl",
+        "🥩 Garlic Butter Steak"
+      ],
+      "bullets": [
+        "Exact Macros & Calories tuned to YOUR metabolism and goal weight",
+        "Fully Personalized 7-Day Meal Plan",
+        "Exact Recipes based on your tastes and cooking skills",
+        "Smart Grocery List organized by supermarket aisle"
+      ],
+      "cta": "Generate My Plan"
+    },
+    "socialProof": {
+      "headline": "Join 10,000+ people worldwide who upgraded their diet.",
+      "cta": "Start My Plan",
+      "reviews": [
+        {
+          "author": "Sarah, 34 • Working Mom",
+          "text": "I asked for 15-minute meals with normal ingredients. Got exactly that — and lost 3 kg."
+        },
+        {
+          "author": "Mike, 28 • Gym Rat",
+          "text": "Finally hit 180g protein without boring chicken. The plan actually tastes good."
+        },
+        {
+          "author": "Elena, 41 • Skeptic",
+          "text": "Paid €6.99 on a whim. Shocked it knew I hate fish and adjusted everything."
+        }
+      ]
+    },
+    "footer": {
+      "disclaimer": "Trained on 50,000+ clinical nutrition datasets... Not medical advice.",
+      "line2": "© 2025 AI Dietitian. All rights reserved."
     },
     "stickyCTA": {
-      "button": "Πάρε το Πλάνο σου - €6.99"
-    }
-  },
-    "faq": {
-    "title": "Συχνές Ερωτήσεις",
-    "subtitle": "Έχετε ερωτήσεις; Έχουμε απαντήσεις.",
-    "items": [
-      {
-        "q": "Πώς διαφέρει ο AI Διαιτολόγος από έναν ανθρώπινο διαιτολόγο;",
-        "a": "Ο AI Διαιτολόγος παρέχει προσαρμοσμένα πλάνα γεύματος βάσει των μοναδικών σας δεδομένων, προσφέροντας άμεσα αποτελέσματα σε μία πρόθεση του κόστους των παραδοσιακών διαιτολόγων."
-      },
-      {
-        "q": "Πόσο ακριβής είναι το διατροφικό πλάνο που δημιουργείται από το AI;",
-        "a": "Yes, we prioritize your privacy and use advanced security measures to protect your data. We do not share your information with third parties without your consent."
-      },
-      {
-        "q": "Can I customize my meal plan further after receiving it?",
-        "a": "Absolutely! You can adjust your preferences and regenerate your meal plan anytime to better suit your evolving needs."
-      },
-      {
-        "q": "What if I have dietary restrictions or allergies?",
-        "a": "During the onboarding process, you can specify any dietary restrictions or allergies, and the AI will tailor your meal plan accordingly."
-      },
-      {
-        "q": "How often should I update my information for the best results?",
-        "a": "We recommend updating your information every few months or whenever there are significant changes in your lifestyle or health goals."
+      "button": "Get Your Plan - €6.99"
+    },
+    "exitPopup": {
+      "title": "Wait, don't leave yet. You will miss your diet plan for just €6.99.",
+      "body": "In just minutes. Don't miss your transformation.",
+      "primaryBtn": "Continue Transformation",
+      "secondaryBtn": "I prefer generic diets"
+    },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "subtitle": "You have questions? We have answers.",
+        "items": [
+          {
+            "q": "How is the AI Dietitian different from a human dietitian?",
+            "a": "The AI Dietitian provides personalized meal plans based on your unique data, offering instant results at a fraction of the cost of traditional dietitians."
+          },
+          {
+            "q": "Is my personal data safe with AI Dietitian?",
+            "a": "Yes, we prioritize your privacy and use advanced security measures to protect your data. We do not share your information with third parties without your consent."
+          },
+          {
+            "q": "Can I customize my meal plan further after receiving it?",
+            "a": "Absolutely! You can adjust your preferences and regenerate your meal plan anytime to better suit your evolving needs."
+          },
+          {
+            "q": "What if I have dietary restrictions or allergies?",
+            "a": "During the onboarding process, you can specify any dietary restrictions or allergies, and the AI will tailor your meal plan accordingly."
+          },
+          {
+            "q": "How often should I update my information for the best results?",
+            "a": "We recommend updating your information every few months or whenever there are significant changes in your lifestyle or health goals."
+          }
+        ]
       }
-    ]
   }
 }

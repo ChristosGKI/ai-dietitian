@@ -1,6 +1,10 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
+import createMiddleware from 'next-intl/middleware';
 import { routing } from './i18n/routing';
+
+// Create next-intl middleware
+const nextIntlMiddleware = createMiddleware(routing);
 
 // Routes that require legal acceptance to access
 // NOTE: Protection is handled by LanguageSelectorWrapper which shows on all pages
@@ -15,19 +19,13 @@ export function proxy(request: NextRequest) {
     (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
   );
   
-  // Redirect to locale-prefixed path if missing
-  if (pathnameIsMissingLocale) {
-    // Check if user has already accepted (has NEXT_LOCALE cookie)
-    const userLocale = request.cookies.get('NEXT_LOCALE')?.value;
-    const locale = userLocale && routing.locales.includes(userLocale as any) 
-      ? userLocale 
-      : routing.defaultLocale;
-    
-    // Preserve query strings
-    const search = request.nextUrl.search;
-    return NextResponse.redirect(
-      new URL(`/${locale}${pathname}${search}`, request.url)
-    );
+  // Let next-intl middleware handle locale detection and redirection first
+  // This returns null if pathname already has locale, or a redirect Response
+  const intlResponse = nextIntlMiddleware(request);
+  
+  // If next-intl returns a redirect, use it
+  if (intlResponse) {
+    return intlResponse;
   }
   
   // Get the locale from the pathname
@@ -40,12 +38,7 @@ export function proxy(request: NextRequest) {
                       pathname.includes('/terms-of-service') ||
                       pathname.includes('/legal');
   
-  // NOTE: Legal acceptance check has been moved to client-side (LanguageSelectorWrapper)
-  // The language selector shows on all non-legal pages until user accepts
-  // This allows navigation to protected routes so users can accept on those pages
-  
   // Check legal acceptance for locale cookie setting
-  // Cookie is set when user selects language from the selector
   const legalAccepted = request.cookies.get('legal_accepted')?.value;
   const hasLegalAcceptance = legalAccepted !== undefined && legalAccepted !== '';
   

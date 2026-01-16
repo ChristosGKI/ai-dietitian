@@ -1,11 +1,10 @@
 'use client';
 
-import { useState, useRef, useEffect } from 'react';
-import { usePathname } from 'next/navigation';
-import { useTranslations } from 'next-intl';
+import { useState, useRef, useEffect, useTransition } from 'react';
+import { usePathname, useRouter } from '@/i18n/routing';
+import { useParams } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Globe, Check, ChevronDown, ArrowLeft, Home } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { Globe, Check, ChevronDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 interface Language {
@@ -21,15 +20,16 @@ const LANGUAGES: Language[] = [
 ];
 
 export default function PageLanguageSwitcher() {
-  const t = useTranslations('common');
   const pathname = usePathname();
+  const params = useParams();
+  const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
+  const [isPending, startTransition] = useTransition();
   const dropdownRef = useRef<HTMLDivElement>(null);
 
-  const currentLocale = LANGUAGES.find(l => pathname?.startsWith(`/${l.code}`))?.code || 'en';
+  // Get current locale from params
+  const currentLocale = (params?.locale as string) || 'en';
   const currentLangObj = LANGUAGES.find(l => l.code === currentLocale) || LANGUAGES[0];
-
-  const isHomePage = pathname === `/${currentLocale}` || pathname === `/${currentLocale}/`;
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
@@ -46,24 +46,34 @@ export default function PageLanguageSwitcher() {
       setIsOpen(false);
       return;
     }
-    const newPath = pathname.replace(/^\/[a-z]{2}/, `/${newLocale}`);
-    window.location.href = newPath;
-  };
 
-  const handleBackToHome = () => {
-    window.location.href = `/${currentLocale}`;
+    // Set locale cookie for persistence
+    const expiryDate = new Date();
+    expiryDate.setFullYear(expiryDate.getFullYear() + 1);
+    document.cookie = `NEXT_LOCALE=${newLocale}; path=/; expires=${expiryDate.toUTCString()}; SameSite=Lax`;
+
+    startTransition(() => {
+      router.replace(pathname, { locale: newLocale });
+    });
+    setIsOpen(false);
   };
 
   return (
     <div className="flex flex-col-reverse sm:flex-row sm:items-center justify-between gap-4 py-4" ref={dropdownRef}>
       
-      {/* 1. Language Dropdown */}
+      {/* Language Dropdown */}
       <div className="relative z-50">
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="flex items-center gap-2.5 px-4 py-2 bg-white/90 backdrop-blur-sm hover:bg-white border border-gray-200 rounded-full shadow-sm transition-all duration-200 group"
+          disabled={isPending}
+          aria-label="Select language"
+          aria-expanded={isOpen}
         >
-          <Globe className="w-4 h-4 text-gray-500 group-hover:text-emerald-600 transition-colors" />
+          <Globe className={cn(
+            "w-4 h-4 text-gray-500 group-hover:text-emerald-600 transition-colors",
+            isPending && "animate-pulse"
+          )} />
           <span className="text-sm font-medium text-gray-700">{currentLangObj.name}</span>
           <ChevronDown className={cn(
             "w-3.5 h-3.5 text-gray-400 transition-transform duration-200",
@@ -78,7 +88,7 @@ export default function PageLanguageSwitcher() {
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 8, scale: 0.95 }}
               transition={{ duration: 0.15 }}
-              style={{ transformOrigin: 'top right' }} // Animates from the right side
+              style={{ transformOrigin: 'top right' }}
               className="absolute right-0 top-full mt-2 w-48 bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden ring-1 ring-black/5"
             >
               <div className="p-1.5 flex flex-col gap-0.5">
@@ -92,13 +102,14 @@ export default function PageLanguageSwitcher() {
                         ? "bg-emerald-50 text-emerald-700 font-medium"
                         : "text-gray-600 hover:bg-gray-50 hover:text-gray-900"
                     )}
+                    aria-current={currentLocale === lang.code ? 'true' : undefined}
                   >
                     <div className="flex items-center gap-3">
-                      <span className="text-lg leading-none">{lang.flag}</span>
+                      <span className="text-lg leading-none" aria-hidden="true">{lang.flag}</span>
                       <span>{lang.name}</span>
                     </div>
                     {currentLocale === lang.code && (
-                      <Check className="w-4 h-4 text-emerald-600" />
+                      <Check className="w-4 h-4 text-emerald-600" aria-hidden="true" />
                     )}
                   </button>
                 ))}
@@ -107,20 +118,6 @@ export default function PageLanguageSwitcher() {
           )}
         </AnimatePresence>
       </div>
-
-      {/* 2. Back to Home (Conditional) */}
-      {!isHomePage && (
-        <Button 
-          variant="ghost" 
-          size="sm" 
-          onClick={handleBackToHome}
-          className="text-gray-500 hover:text-emerald-600 hover:bg-emerald-50 gap-2 px-4 rounded-full"
-        >
-          <ArrowLeft className="w-4 h-4" />
-          <span className="hidden sm:inline">{t('backToHome')}</span>
-          <Home className="w-4 h-4 sm:hidden" />
-        </Button>
-      )}
     </div>
   );
 }

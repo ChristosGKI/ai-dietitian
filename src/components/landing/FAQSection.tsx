@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/accordion";
 
 export function FAQSection() {
-  const t = useTranslations("faq");
+  const t = useTranslations("landing.faq");
   const items = t.raw("items") as Array<{ q: string; a: string }>;
 
   return (

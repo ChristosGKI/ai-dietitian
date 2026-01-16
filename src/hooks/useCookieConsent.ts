@@ -1,3 +1,4 @@
+// hooks/useCookieConsent.ts
 'use client';
 
 import { useState, useCallback, useEffect } from 'react';
@@ -28,19 +29,13 @@ export function useCookieConsent() {
     };
 
     cookieManager.acceptAll(source);
+    
+    // Update state immediately to close banner
     setPreferences(newPreferences);
     setHasConsented(true);
 
-    // Also set legal_accepted cookie so user can access protected routes
-    // This is needed because middleware checks for legal_accepted cookie
-    if (typeof document !== 'undefined') {
-      const expiryDate = new Date();
-      expiryDate.setFullYear(expiryDate.getFullYear() + 1);
-      document.cookie = `legal_accepted=true; path=/; expires=${expiryDate.toUTCString()}; SameSite=Lax`;
-    }
-
     // Optionally sync with backend
-    await syncConsentToBackend(newPreferences);
+    await syncConsentToBackend(newPreferences, source);
   }, []);
 
   // Reject all non-essential cookies
@@ -53,19 +48,13 @@ export function useCookieConsent() {
     };
 
     cookieManager.rejectAll(source);
+    
+    // Update state immediately to close banner
     setPreferences(newPreferences);
     setHasConsented(true);
 
-    // Also set legal_accepted cookie so user can access protected routes
-    // This is needed because middleware checks for legal_accepted cookie
-    if (typeof document !== 'undefined') {
-      const expiryDate = new Date();
-      expiryDate.setFullYear(expiryDate.getFullYear() + 1);
-      document.cookie = `legal_accepted=true; path=/; expires=${expiryDate.toUTCString()}; SameSite=Lax`;
-    }
-
     // Optionally sync with backend
-    await syncConsentToBackend(newPreferences);
+    await syncConsentToBackend(newPreferences, source);
   }, []);
 
   // Save custom preferences
@@ -79,19 +68,13 @@ export function useCookieConsent() {
       };
 
       cookieManager.setConsent(prefs as Omit<CookiePreferences, 'essential'>, 'preferences');
+      
+      // Update state immediately to close banner
       setPreferences(newPreferences);
       setHasConsented(true);
 
-      // Also set legal_accepted cookie so user can access protected routes
-      // This is needed because middleware checks for legal_accepted cookie
-      if (typeof document !== 'undefined') {
-        const expiryDate = new Date();
-        expiryDate.setFullYear(expiryDate.getFullYear() + 1);
-        document.cookie = `legal_accepted=true; path=/; expires=${expiryDate.toUTCString()}; SameSite=Lax`;
-      }
-
       // Optionally sync with backend
-      await syncConsentToBackend(newPreferences);
+      await syncConsentToBackend(newPreferences, 'preferences');
     },
     []
   );
@@ -135,9 +118,12 @@ export function useCookieConsent() {
 }
 
 /**
- * Sync consent to backend API
+ * Sync consent to backend API for compliance tracking
  */
-async function syncConsentToBackend(preferences: CookiePreferences): Promise<void> {
+async function syncConsentToBackend(
+  preferences: CookiePreferences,
+  source: 'banner' | 'preferences'
+): Promise<void> {
   try {
     await fetch('/api/consent', {
       method: 'POST',
@@ -149,6 +135,8 @@ async function syncConsentToBackend(preferences: CookiePreferences): Promise<voi
         analytics: preferences.analytics,
         marketing: preferences.marketing,
         version: '1.0',
+        source,
+        timestamp: new Date().toISOString(),
       }),
     });
   } catch (error) {
@@ -163,6 +151,12 @@ async function notifyWithdrawal(): Promise<void> {
   try {
     await fetch('/api/consent', {
       method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        timestamp: new Date().toISOString(),
+      }),
     });
   } catch (error) {
     console.error('[useCookieConsent] Failed to notify withdrawal:', error);

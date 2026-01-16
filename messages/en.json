@@ -277,49 +277,6 @@
     "privacyPolicy": "Privacy Policy",
     "cookiePolicy": "Cookie Policy"
   },
-  "cookieConsent": {
-    "banner": {
-      "title": "We value your privacy",
-      "description": "We use cookies to enhance your experience. Essential cookies are always active, and you can choose to enable or disable other types of cookies.",
-      "acceptAll": "Accept All",
-      "rejectAll": "Reject All",
-      "customize": "Customize",
-      "learnMore": "Read our Cookie Policy"
-    },
-    "modal": {
-      "title": "Cookie Preferences",
-      "description": "Manage which cookies you want to enable. Essential cookies are always active as they are required for the website to function.",
-      "save": "Save Preferences",
-      "withdraw": "Withdraw All Consent",
-      "confirmWithdraw": "Are you sure you want to withdraw consent? This will disable all non-essential cookies.",
-      "categories": {
-        "essential": {
-          "title": "Essential Cookies",
-          "description": "Required for the website to function properly. These include language preference and security cookies.",
-          "alwaysActive": "Always active"
-        },
-        "functional": {
-          "title": "Functional Cookies",
-          "description": "Remember your preferences and settings for a personalized experience."
-        },
-        "analytics": {
-          "title": "Analytics Cookies",
-          "description": "Help us improve our website by showing us which pages are most popular and how visitors move around the site."
-        },
-        "marketing": {
-          "title": "Marketing Cookies",
-          "description": "Enable personalized recommendations and relevant content based on your interests."
-        }
-      }
-    },
-    "footer": {
-      "linkText": "Cookie Settings"
-    },
-    "notifications": {
-      "accepted": "Cookie preferences saved successfully",
-      "withdrawn": "Consent withdrawn. All non-essential cookies have been disabled."
-    }
-  },
   "privacyPolicy": {
     "title": "Privacy Policy",
     "lastUpdated": "Last updated: January 2025",
@@ -433,6 +390,8 @@
       }
     }
   },
+
+
   "landing": {
     "urgencyBanner": {
       "text": "Limited-time price: €6.99 (from €12.99) — Offer ends soon."
@@ -512,33 +471,74 @@
       "body": "In just minutes. Don't miss your transformation.",
       "primaryBtn": "Continue Transformation",
       "secondaryBtn": "I prefer generic diets"
-    }
-  },
-  "faq": {
-    "title": "Frequently Asked Questions",
-    "subtitle": "You have questions? We have answers.",
-    "items": [
-      {
-        "q": "How is the AI Dietitian different from a human dietitian?",
-        "a": "The AI Dietitian provides personalized meal plans based on your unique data, offering instant results at a fraction of the cost of traditional dietitians."
-      },
-      {
-        "q": "Is my personal data safe with AI Dietitian?",
-        "a": "Yes, we prioritize your privacy and use advanced security measures to protect your data. We do not share your information with third parties without your consent."
-      },
-      {
-        "q": "Can I customize my meal plan further after receiving it?",
-        "a": "Absolutely! You can adjust your preferences and regenerate your meal plan anytime to better suit your evolving needs."
-      },
-      {
-        "q": "What if I have dietary restrictions or allergies?",
-        "a": "During the onboarding process, you can specify any dietary restrictions or allergies, and the AI will tailor your meal plan accordingly."
-      },
-      {
-        "q": "How often should I update my information for the best results?",
-        "a": "We recommend updating your information every few months or whenever there are significant changes in your lifestyle or health goals."
+    },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "subtitle": "You have questions? We have answers.",
+        "items": [
+          {
+            "q": "How is the AI Dietitian different from a human dietitian?",
+            "a": "The AI Dietitian provides personalized meal plans based on your unique data, offering instant results at a fraction of the cost of traditional dietitians."
+          },
+          {
+            "q": "Is my personal data safe with AI Dietitian?",
+            "a": "Yes, we prioritize your privacy and use advanced security measures to protect your data. We do not share your information with third parties without your consent."
+          },
+          {
+            "q": "Can I customize my meal plan further after receiving it?",
+            "a": "Absolutely! You can adjust your preferences and regenerate your meal plan anytime to better suit your evolving needs."
+          },
+          {
+            "q": "What if I have dietary restrictions or allergies?",
+            "a": "During the onboarding process, you can specify any dietary restrictions or allergies, and the AI will tailor your meal plan accordingly."
+          },
+          {
+            "q": "How often should I update my information for the best results?",
+            "a": "We recommend updating your information every few months or whenever there are significant changes in your lifestyle or health goals."
+          }
+        ]
       }
-    ]
+  },
+  "cookieConsent": {
+    "banner": {
+      "title": "Cookie Settings",
+      "description": "We use cookies to enhance your experience, analyze site traffic, and personalize content. You can customize your preferences or accept all cookies.",
+      "descriptionEU": "We value your privacy. Under GDPR, we need your consent to use non-essential cookies. You have full control over your data and can change your preferences at any time.",
+      "learnMore": "Cookie Policy",
+      "acceptAll": "Accept All",
+      "rejectAll": "Reject All",
+      "customize": "Customize",
+      "euNotice": "Under GDPR, you have the right to control your data. You can withdraw consent at any time through Cookie Settings in the footer."
+    },
+    "modal": {
+      "title": "Cookie Preferences",
+      "description": "We respect your privacy. Choose which cookies you're comfortable with. You can change these settings at any time.",
+      "save": "Save Preferences",
+      "withdraw": "Withdraw Consent",
+      "confirmWithdraw": "Are you sure you want to withdraw all cookie consent? This will disable all non-essential cookies and you'll need to provide consent again to use certain features.",
+      "categories": {
+        "essential": {
+          "title": "Essential Cookies",
+          "description": "Required for the website to function properly. These cannot be disabled as they're necessary for security, authentication, and basic features.",
+          "alwaysActive": "Always Active"
+        },
+        "functional": {
+          "title": "Functional Cookies",
+          "description": "Enable enhanced functionality and personalization, such as language preferences and UI customization."
+        },
+        "analytics": {
+          "title": "Analytics Cookies",
+          "description": "Help us understand how visitors interact with our website by collecting and reporting information anonymously."
+        },
+        "marketing": {
+          "title": "Marketing Cookies",
+          "description": "Used to track visitors across websites to display relevant and engaging advertisements tailored to your interests."
+        }
+      }
+    },
+    "footer": {
+      "linkText": "Cookie Settings"
+    }
   }
 }
 
