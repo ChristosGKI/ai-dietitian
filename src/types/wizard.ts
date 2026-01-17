@@ -1,6 +1,6 @@
 /**
  * Wizard Type Definitions
- * Config-Driven Multi-Step Wizard for AI Dietitian
+ * Config-Driven Multi-Step Wizard for Foodbrain
  * Philosophy: "Define once, render everywhere"
  */
 

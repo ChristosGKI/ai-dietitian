@@ -26,7 +26,7 @@ export function CredibilityFooter() {
           {/* Brand Column */}
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
             <span className="text-xl font-bold text-gray-900 tracking-tight mb-2">
-              AI Dietitian<span className="text-emerald-500">.</span>
+              Foodbrain<span className="text-emerald-500">.</span>
             </span>
             <p className="text-sm text-gray-500 max-w-xs">
               Science-based nutrition planning powered by artificial intelligence.

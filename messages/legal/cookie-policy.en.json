@@ -2,7 +2,7 @@
   "cookiePolicy": {
     "title": "Cookie Policy",
     "lastUpdated": "Last updated: January 2025",
-    "intro": "This policy explains how AI Dietitian uses cookies and similar technologies in compliance with GDPR and ePrivacy Directive requirements.",
+    "intro": "This policy explains how Foodbrain uses cookies and similar technologies in compliance with GDPR and ePrivacy Directive requirements.",
     "whatAreCookies": {
       "title": "What Are Cookies",
       "content": "Cookies are small text files that are stored on your device (computer, tablet, or mobile phone) when you visit a website. They are widely used to make websites work more efficiently and provide information to the owners of the site. Cookies help us recognize your device, remember your preferences, and improve your experience on our platform."
@@ -40,7 +40,7 @@
     },
     "languageCookies": {
       "title": "Cookies and Language Selection",
-      "content": "AI Dietitian uses cookies to enhance your language selection experience. When you choose a language preference using our language selector, we may set a cookie to remember your selection. This ensures that:",
+      "content": "Foodbrain uses cookies to enhance your language selection experience. When you choose a language preference using our language selector, we may set a cookie to remember your selection. This ensures that:",
       "benefit1": "Your preferred language is remembered for future visits",
       "benefit2": "You don't need to select your language each time you return to the site",
       "benefit3": "Your session remains consistent as you navigate through different pages",
@@ -136,7 +136,7 @@
     "contact": {
       "title": "Contact Us",
       "content": "If you have questions about our use of cookies, please contact us at:",
-      "companyName": "AI Dietitian",
+      "companyName": "Foodbrain",
       "email": "Email: privacy@aidietitian.com",
       "address": "Address: [Company Address]"
     }

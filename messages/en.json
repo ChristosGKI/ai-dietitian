@@ -2,11 +2,11 @@
   "common": {
     "backToHome": "Back to Home"
   },
-  "homeTitle": "AI Dietitian",
+  "homeTitle": "Foodbrain",
   "homeDescription": "Get your personalized diet plan powered by AI. Start your journey to better health today.",
   "homeGetStarted": "Get Started!",
   "home": {
-    "title": "AI Dietitian",
+    "title": "Foodbrain",
     "description": "Get your personalized diet plan powered by AI. Start your journey to better health today.",
     "getStarted": "Get Started!"
   },
@@ -280,7 +280,7 @@
   "privacyPolicy": {
     "title": "Privacy Policy",
     "lastUpdated": "Last updated: January 2025",
-    "intro": "AI Dietitian is committed to protecting your privacy. This policy explains how we collect, use, and safeguard your information.",
+    "intro": "Foodbrain is committed to protecting your privacy. This policy explains how we collect, use, and safeguard your information.",
     "sections": {
       "dataCollection": {
         "title": "Information We Collect",
@@ -311,7 +311,7 @@
   "cookiePolicy": {
     "title": "Cookie Policy",
     "lastUpdated": "Last updated: January 2025",
-    "intro": "This policy explains how AI Dietitian uses cookies and similar technologies.",
+    "intro": "This policy explains how Foodbrain uses cookies and similar technologies.",
     "sections": {
       "whatAreCookies": {
         "title": "What Are Cookies",
@@ -461,7 +461,7 @@
     },
     "footer": {
       "disclaimer": "Trained on 50,000+ clinical nutrition datasets... Not medical advice.",
-      "line2": "© 2025 AI Dietitian. All rights reserved."
+      "line2": "© 2025 Foodbrain. All rights reserved."
     },
     "stickyCTA": {
       "button": "Get Your Plan - €6.99"
@@ -477,11 +477,11 @@
         "subtitle": "You have questions? We have answers.",
         "items": [
           {
-            "q": "How is the AI Dietitian different from a human dietitian?",
-            "a": "The AI Dietitian provides personalized meal plans based on your unique data, offering instant results at a fraction of the cost of traditional dietitians."
+            "q": "How is the Foodbrain different from a human dietitian?",
+            "a": "The Foodbrain provides personalized meal plans based on your unique data, offering instant results at a fraction of the cost of traditional dietitians."
           },
           {
-            "q": "Is my personal data safe with AI Dietitian?",
+            "q": "Is my personal data safe with Foodbrain?",
             "a": "Yes, we prioritize your privacy and use advanced security measures to protect your data. We do not share your information with third parties without your consent."
           },
           {

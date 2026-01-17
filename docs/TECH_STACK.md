@@ -1,6 +1,6 @@
 # Tech Stack
 
-The AI Dietitian project is built with modern, scalable technologies to provide a robust and performant web application.
+The Foodbrain project is built with modern, scalable technologies to provide a robust and performant web application.
 
 ## Core Technologies
 

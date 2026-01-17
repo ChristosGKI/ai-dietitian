@@ -1,6 +1,6 @@
 # GDPR Compliance
 
-This document describes the GDPR compliance implementation in the AI Dietitian application.
+This document describes the GDPR compliance implementation in the Foodbrain application.
 
 ## Overview
 

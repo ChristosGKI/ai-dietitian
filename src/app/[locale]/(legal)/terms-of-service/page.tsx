@@ -11,8 +11,8 @@ export async function generateMetadata({
   const { locale } = await params;
   
   return {
-    title: 'Terms of Service | AI Dietitian',
-    description: 'Terms and conditions for using the AI Dietitian service.',
+    title: 'Terms of Service | Foodbrain',
+    description: 'Terms and conditions for using the Foodbrain service.',
   };
 }
 

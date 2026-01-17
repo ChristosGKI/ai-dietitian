@@ -1,6 +1,6 @@
 # Features
 
-The AI Dietitian application provides a comprehensive personalized diet planning experience with a multi-step onboarding process, seamless payment integration, and GDPR-compliant language selection.
+The Foodbrain application provides a comprehensive personalized diet planning experience with a multi-step onboarding process, seamless payment integration, and GDPR-compliant language selection.
 
 ## Core Features
 

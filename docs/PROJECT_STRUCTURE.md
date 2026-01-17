@@ -1,6 +1,6 @@
 # Project Structure
 
-The AI Dietitian project follows a clean, modular architecture using Next.js App Router with organized directories for better maintainability.
+The Foodbrain project follows a clean, modular architecture using Next.js App Router with organized directories for better maintainability.
 
 ## Directory Overview
 

@@ -323,7 +323,7 @@
   "privacyPolicy": {
     "title": "Política de Privacidad",
     "lastUpdated": "Última actualización: Enero 2025",
-    "intro": "AI Dietitian se compromete a proteger su privacidad. Esta política explica cómo recopilamos, utilizamos y protegemos su información.",
+    "intro": "Foodbrain se compromete a proteger su privacidad. Esta política explica cómo recopilamos, utilizamos y protegemos su información.",
     "sections": {
       "dataCollection": {
         "title": "Información que Recopilamos",
@@ -354,7 +354,7 @@
   "cookiePolicy": {
     "title": "Política de Cookies",
     "lastUpdated": "Última actualización: Enero 2025",
-    "intro": "Esta política explica cómo AI Dietitian utiliza cookies y tecnologías similares.",
+    "intro": "Esta política explica cómo Foodbrain utiliza cookies y tecnologías similares.",
     "sections": {
       "whatAreCookies": {
         "title": "Qué son las Cookies",
@@ -433,31 +433,153 @@
       }
     }
   },
+
   "landing": {
+    "urgencyBanner": {
+      "text": "Precio por tiempo limitado: 6,99 € (antes 12,99 €). Oferta válida hasta el 31 de diciembre."
+    },
+    "hero": {
+      "h1": "Your Personal Nutritionist. Without the €150 Fee.",
+      "subhead": "Eat exactly what your body needs. Fully personalized 30-day meal plan based on your tastes, budget, and metabolism. Ready in minutes.",
+      "leftCardLabel": "Dietitian Consultation",
+      "leftCardPrice": "€150.00",
+      "rightCardLabel": "Your Custom Plan",
+      "rightCardPrice": "€6.99",
+      "badge": "Save €143!",
+      "cta": "Start My Plan"
+    },
+    "trustBanner": {
+      "items": [
+        "No Monthly Fees",
+        "One-Time Payment",
+        "Yours Forever",
+        "Cancel Anytime (Nothing to Cancel)"
+      ]
+    },
+    "comparison": {
+      "title": "Why Choose Your Custom Plan",
+      "subtitle": "Compare the options and see why thousands choose our AI-powered solution",
+      "headers": ["Human Dietitian", "Generic App", "Your Custom Plan"],
+      "rows": [
+        { "label": "Cost", "values": ["€150", "€15/mo", "€6.99 once"] },
+        { "label": "Time", "values": ["1 Week", "Instant", "Instant"] },
+        { "label": "Privacy", "values": ["Low", "Medium", "100% Faceless"] }
+      ],
+      "footer": "Best value meets clinical precision",
+      "cta": "Best value meets clinical precision"
+    },
+    "showcase": {
+      "title": "Your Perfect Meal Plan, Ready in Minutes",
+      "meals": [
+        "🥞 Protein Pancakes",
+        "🥗 Quinoa Power Bowl",
+        "🥩 Garlic Butter Steak"
+      ],
+      "bullets": [
+        "Exact Macros & Calories tuned to YOUR metabolism and goal weight",
+        "Fully Personalized 7-Day Meal Plan",
+        "Exact Recipes based on your tastes and cooking skills",
+        "Smart Grocery List organized by supermarket aisle"
+      ],
+      "cta": "Generate My Plan"
+    },
     "socialProof": {
-      "header": "Únete a más de 10.000 personas en todo el mundo que mejoraron su dieta.",
-      "cta": "Obtener Mi Plan Personalizado – €6.99",
-      "testimonials": {
-        "busyParent": {
-          "label": "Padre Ocupado",
-          "quote": "Como madre trabajadora, pedí comidas de 15 minutos con ingredientes normales del supermercado. Obtuve exactamente eso — y perdí 3 kg en las primeras dos semanas sin estrés."
+      "headline": "Join 10,000+ people worldwide who upgraded their diet.",
+      "cta": "Start My Plan",
+      "reviews": [
+        {
+          "author": "Sarah, 34 • Working Mom",
+          "text": "I asked for 15-minute meals with normal ingredients. Got exactly that — and lost 3 kg."
         },
-        "gymRat": {
-          "label": "Apasionado del Gimnasio",
-          "quote": "Finalmente llegué a 180g de proteína diaria sin pechuga de pollo aburrida en cada comida. El plan realmente sabe bien."
+        {
+          "author": "Mike, 28 • Gym Rat",
+          "text": "Finally hit 180g protein without boring chicken. The plan actually tastes good."
         },
-        "skeptic": {
-          "label": "Escéptico",
-          "quote": "Pagué €6.99 por capricho pensando que sería basura genérica. Me sorprendió — sabía que odio el pescado y ajustó todo perfectamente."
+        {
+          "author": "Elena, 41 • Skeptic",
+          "text": "Paid €6.99 on a whim. Shocked it knew I hate fish and adjusted everything."
+        }
+      ]
+    },
+    "footer": {
+      "disclaimer": "Trained on 50,000+ clinical nutrition datasets... Not medical advice.",
+      "line2": "© 2025 Foodbrain. All rights reserved."
+    },
+    "stickyCTA": {
+      "button": "Get Your Plan - €6.99"
+    },
+    "exitPopup": {
+      "title": "Wait, don't leave yet. You will miss your diet plan for just €6.99.",
+      "body": "In just minutes. Don't miss your transformation.",
+      "primaryBtn": "Continue Transformation",
+      "secondaryBtn": "I prefer generic diets"
+    },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "subtitle": "You have questions? We have answers.",
+        "items": [
+          {
+            "q": "How is the Foodbrain different from a human dietitian?",
+            "a": "The Foodbrain provides personalized meal plans based on your unique data, offering instant results at a fraction of the cost of traditional dietitians."
+          },
+          {
+            "q": "Is my personal data safe with Foodbrain?",
+            "a": "Yes, we prioritize your privacy and use advanced security measures to protect your data. We do not share your information with third parties without your consent."
+          },
+          {
+            "q": "Can I customize my meal plan further after receiving it?",
+            "a": "Absolutely! You can adjust your preferences and regenerate your meal plan anytime to better suit your evolving needs."
+          },
+          {
+            "q": "What if I have dietary restrictions or allergies?",
+            "a": "During the onboarding process, you can specify any dietary restrictions or allergies, and the AI will tailor your meal plan accordingly."
+          },
+          {
+            "q": "How often should I update my information for the best results?",
+            "a": "We recommend updating your information every few months or whenever there are significant changes in your lifestyle or health goals."
+          }
+        ]
+      }
+  },
+  "cookieConsent": {
+    "banner": {
+      "title": "Cookie Settings",
+      "description": "We use cookies to enhance your experience, analyze site traffic, and personalize content. You can customize your preferences or accept all cookies.",
+      "descriptionEU": "We value your privacy. Under GDPR, we need your consent to use non-essential cookies. You have full control over your data and can change your preferences at any time.",
+      "learnMore": "Cookie Policy",
+      "acceptAll": "Accept All",
+      "rejectAll": "Reject All",
+      "customize": "Customize",
+      "euNotice": "Under GDPR, you have the right to control your data. You can withdraw consent at any time through Cookie Settings in the footer."
+    },
+    "modal": {
+      "title": "Cookie Preferences",
+      "description": "We respect your privacy. Choose which cookies you're comfortable with. You can change these settings at any time.",
+      "save": "Save Preferences",
+      "withdraw": "Withdraw Consent",
+      "confirmWithdraw": "Are you sure you want to withdraw all cookie consent? This will disable all non-essential cookies and you'll need to provide consent again to use certain features.",
+      "categories": {
+        "essential": {
+          "title": "Essential Cookies",
+          "description": "Required for the website to function properly. These cannot be disabled as they're necessary for security, authentication, and basic features.",
+          "alwaysActive": "Always Active"
+        },
+        "functional": {
+          "title": "Functional Cookies",
+          "description": "Enable enhanced functionality and personalization, such as language preferences and UI customization."
+        },
+        "analytics": {
+          "title": "Analytics Cookies",
+          "description": "Help us understand how visitors interact with our website by collecting and reporting information anonymously."
+        },
+        "marketing": {
+          "title": "Marketing Cookies",
+          "description": "Used to track visitors across websites to display relevant and engaging advertisements tailored to your interests."
         }
       }
     },
-    "credibility": {
-      "line1": "Entrenado con más de 50.000 conjuntos de datos de nutrición clínica • Verificado según directrices internacionales",
-      "line2": "No es consejo médico • Solo para fines educativos • © 2026 Dietista IA"
-    },
-    "stickyCTA": {
-      "button": "Obtén Tu Plan - €6.99"
+    "footer": {
+      "linkText": "Cookie Settings"
     }
   }
 }

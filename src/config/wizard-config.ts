@@ -1,6 +1,6 @@
 /**
  * Wizard Configuration Skeleton
- * Config-Driven Multi-Step Wizard for AI Dietitian
+ * Config-Driven Multi-Step Wizard for Foodbrain
  * 
  * This file demonstrates the configuration structure for the wizard.
  * All text fields use i18n keys - actual text is resolved at runtime.

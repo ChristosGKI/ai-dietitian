@@ -1,6 +1,6 @@
 # Form Wizard Documentation
 
-The AI Dietitian onboarding system uses a config-driven multi-step wizard architecture. Questions, phases, and options are defined in configuration files, not hardcoded in JSX, enabling the "Define once, render everywhere" philosophy with full i18n support.
+The Foodbrain onboarding system uses a config-driven multi-step wizard architecture. Questions, phases, and options are defined in configuration files, not hardcoded in JSX, enabling the "Define once, render everywhere" philosophy with full i18n support.
 
 ---
 

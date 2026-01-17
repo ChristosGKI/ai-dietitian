@@ -1,4 +1,4 @@
-# AI Dietitian
+# Foodbrain
 
 A comprehensive personalized diet planning web application built with Next.js 16, featuring a multi-step onboarding process, seamless payment integration, and GDPR-compliant language selection.
 

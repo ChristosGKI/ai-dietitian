@@ -12,8 +12,8 @@ export async function generateMetadata({
   const { locale } = await params;
   
   return {
-    title: 'Data Protection | AI Dietitian',
-    description: 'Learn about how AI Dietitian protects your personal data and your rights under data protection laws.',
+    title: 'Data Protection | Foodbrain',
+    description: 'Learn about how Foodbrain protects your personal data and your rights under data protection laws.',
   };
 }
 

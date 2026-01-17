@@ -6,7 +6,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 
 export const metadata: Metadata = {
-  title: "AI Dietitian",
+  title: "Foodbrain",
   description: "Get your personalized diet plan powered by AI",
 };
 

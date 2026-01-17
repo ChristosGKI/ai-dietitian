@@ -9,7 +9,7 @@
 
 ## 1. Executive Summary
 
-This document specifies the requirements for implementing GDPR-compliant cookie consent in the AI Dietitian application. The current implementation violates the ePrivacy Directive by automatically setting non-essential cookies upon language selection without explicit user consent for each cookie category.
+This document specifies the requirements for implementing GDPR-compliant cookie consent in the Foodbrain application. The current implementation violates the ePrivacy Directive by automatically setting non-essential cookies upon language selection without explicit user consent for each cookie category.
 
 ### Current Violations Identified
 
@@ -270,7 +270,7 @@ While maintaining full GDPR compliance, there are legitimate opportunities to ma
 
 ---
 
-## 4. Specific Requirements for AI Dietitian Project
+## 4. Specific Requirements for Foodbrain Project
 
 ### 4.1 Cookie Categories to Implement
 
@@ -831,7 +831,7 @@ describe('Cookie Consent Compliance', () => {
 
 ## 10. Conclusion
 
-This specification document provides comprehensive requirements for implementing GDPR-compliant cookie consent in the AI Dietitian application. Following these specifications will:
+This specification document provides comprehensive requirements for implementing GDPR-compliant cookie consent in the Foodbrain application. Following these specifications will:
 
 1. **Achieve 100% cookie compliance** with GDPR and ePrivacy Directive
 2. **Eliminate legal risk** from current consent violations
@@ -845,5 +845,5 @@ This specification document provides comprehensive requirements for implementing
 
 ---
 
-*Document prepared for AI Dietitian development team*  
+*Document prepared for Foodbrain development team*  
 *Compliance Standard: GDPR (EU) 2016/679 + ePrivacy Directive 2002/58/EC*

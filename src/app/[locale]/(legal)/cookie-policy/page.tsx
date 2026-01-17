@@ -12,8 +12,8 @@ export async function generateMetadata({
   const { locale } = await params;
   
   return {
-    title: 'Cookie Policy | AI Dietitian',
-    description: 'Learn about how AI Dietitian uses cookies and similar technologies.',
+    title: 'Cookie Policy | Foodbrain',
+    description: 'Learn about how Foodbrain uses cookies and similar technologies.',
   };
 }
 

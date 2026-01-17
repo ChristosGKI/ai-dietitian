@@ -9,7 +9,7 @@
 
 ## 1. Executive Summary
 
-This document provides a comprehensive UI/UX design strategy for implementing GDPR-compliant cookie consent in the AI Dietitian application. The current implementation violates the ePrivacy Directive by automatically setting non-essential cookies upon language selection without explicit user consent for each cookie category.
+This document provides a comprehensive UI/UX design strategy for implementing GDPR-compliant cookie consent in the Foodbrain application. The current implementation violates the ePrivacy Directive by automatically setting non-essential cookies upon language selection without explicit user consent for each cookie category.
 
 ### Current State Analysis
 
@@ -737,5 +737,5 @@ flowchart LR
 
 ---
 
-*Document prepared for AI Dietitian development team*  
+*Document prepared for Foodbrain development team*  
 *Design Standard: GDPR (EU) 2016/679 + ePrivacy Directive 2002/58/EC*

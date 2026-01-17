@@ -1,6 +1,6 @@
 /**
- * AI Dietitian Wizard Configuration
- * Config-Driven Multi-Step Wizard for AI Dietitian
+ * Foodbrain Wizard Configuration
+ * Config-Driven Multi-Step Wizard for Foodbrain
  *
  * All text fields use i18n keys - actual text is resolved at runtime.
  */

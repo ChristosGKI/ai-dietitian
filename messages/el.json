@@ -502,7 +502,7 @@
     },
     "footer": {
       "disclaimer": "Trained on 50,000+ clinical nutrition datasets... Not medical advice.",
-      "line2": "© 2025 AI Dietitian. All rights reserved."
+      "line2": "© 2025 Foodbrain. All rights reserved."
     },
     "stickyCTA": {
       "button": "Get Your Plan - €6.99"
@@ -518,11 +518,11 @@
         "subtitle": "You have questions? We have answers.",
         "items": [
           {
-            "q": "How is the AI Dietitian different from a human dietitian?",
-            "a": "The AI Dietitian provides personalized meal plans based on your unique data, offering instant results at a fraction of the cost of traditional dietitians."
+            "q": "How is the Foodbrain different from a human dietitian?",
+            "a": "The Foodbrain provides personalized meal plans based on your unique data, offering instant results at a fraction of the cost of traditional dietitians."
           },
           {
-            "q": "Is my personal data safe with AI Dietitian?",
+            "q": "Is my personal data safe with Foodbrain?",
             "a": "Yes, we prioritize your privacy and use advanced security measures to protect your data. We do not share your information with third parties without your consent."
           },
           {

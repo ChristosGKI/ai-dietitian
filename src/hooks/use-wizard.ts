@@ -1,6 +1,6 @@
 /**
  * use-wizard Hook
- * Config-Driven Multi-Step Wizard for AI Dietitian
+ * Config-Driven Multi-Step Wizard for Foodbrain
  * Handles wizard state management, navigation, and persistence
  */
 

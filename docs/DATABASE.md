@@ -1,6 +1,6 @@
 # Database Documentation
 
-The AI Dietitian project uses PostgreSQL as the database and Prisma as the ORM for type-safe database operations.
+The Foodbrain project uses PostgreSQL as the database and Prisma as the ORM for type-safe database operations.
 
 ## Database Schema
 
